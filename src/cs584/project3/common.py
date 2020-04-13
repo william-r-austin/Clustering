@@ -3,16 +3,21 @@ Created on Mar 14, 2020
 
 @author: William
 '''
-import cs584.project3.utilities as utilities
 import os
 import numpy as np
 import cs584.project3.constants as constants
 from datetime import datetime
+from os.path import dirname, realpath
+
+def getProjectRootDirectory():
+    dirPath = dirname(realpath(__file__))
+    projectDirPath = dirname(dirname(dirname(dirPath)))
+    return projectDirPath
 
 def readIrisFile():
     relativePath = constants.IRIS_DATA_FILE
     irisData = np.zeros(shape=(150,4), dtype=np.float64)
-    rootDirectory = utilities.getProjectRootDirectory()
+    rootDirectory = getProjectRootDirectory()
     filePath = os.path.join(rootDirectory, relativePath)
     
     dataFile = open(filePath, "r")
@@ -27,10 +32,49 @@ def readIrisFile():
     
     return irisData
 
+def readIrisFile2():
+    relativePath = constants.IRIS_DATA_FILE
+    irisData = []
+    rootDirectory = getProjectRootDirectory()
+    filePath = os.path.join(rootDirectory, relativePath)
+    
+    dataFile = open(filePath, "r")
+    index = 0
+    for dataFileLine in dataFile:
+        parts = dataFileLine.split(" ")
+        numParts = len(parts)
+        dataRowArray = np.array([float(j.strip()) for j in parts], dtype=np.float64)
+        irisData.append(dataRowArray)
+        for j in range(4):
+            irisData[index, j] = float(parts[j].strip())
+        index += 1
+        
+    dataFile.close()
+    
+    return irisData
+
+def readDigitsFile():
+    relativePath = constants.IRIS_DATA_FILE
+    digitsData = np.ndarray(shape=(10740, 784))
+    
+    rootDirectory = getProjectRootDirectory()
+    filePath = os.path.join(rootDirectory, relativePath)
+    
+    dataFile = open(filePath, "r")
+    index = 0
+    for dataFileLine in dataFile:
+        parts = dataFileLine.split(",")
+        dataRow = np.array([int(k) for k in range(parts)],dtype=np.int16)
+        digitsData[index, :] = dataRow
+        index += 1
+        
+    dataFile.close()
+    return digitsData
+
 def writeResultsFile(resultsArray):
-    rootDirectory = utilities.getProjectRootDirectory()
+    rootDirectory = getProjectRootDirectory()
     x = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-    relativePath = "resources/output/prediction_waustin_" + x + ".txt"
+    relativePath = "resources\\output\\prediction_waustin_" + x + ".txt"
     fullPath = os.path.join(rootDirectory, relativePath)
     #print("Full Path = " + fullPath)
 
@@ -44,3 +88,5 @@ def writeResultsFile(resultsArray):
         outputFile.write(outputLine)
     
     outputFile.close()
+    
+    print("Finished creating output file. Path is: " + relativePath)

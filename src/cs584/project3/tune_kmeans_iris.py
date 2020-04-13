@@ -56,7 +56,6 @@ def kmeans(X, clusterCount):
                 clusterLabels[r] = closestClusterNum
                 totalChanges += 1
         
-        
         print("FINISHED ITERATION " + str(iteration))
         if totalChanges == 0:
             converged = True
