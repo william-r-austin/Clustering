@@ -8,6 +8,7 @@ import numpy as np
 import cs584.project3.constants as constants
 from datetime import datetime
 from os.path import dirname, realpath
+from scipy.spatial.distance import euclidean
 
 def getProjectRootDirectory():
     dirPath = dirname(realpath(__file__))
@@ -32,7 +33,7 @@ def readIrisFile():
     
     return irisData
 
-def readIrisFile2():
+def readIrisFileAsList():
     relativePath = constants.IRIS_DATA_FILE
     irisData = []
     rootDirectory = getProjectRootDirectory()
@@ -90,3 +91,13 @@ def writeResultsFile(resultsArray):
     outputFile.close()
     
     print("Finished creating output file. Path is: " + relativePath)
+
+def irisDataDistanceFunction(a, b):
+    return euclidean(a, b)
+
+def irisDataCenterFunction(X):
+    totalElements = X.shape[0]
+    if totalElements > 0:
+        return np.sum(a=X, axis=0, dtype=np.float64) / totalElements
+    
+    raise Exception("Cannot compute center of empty set of points!")
