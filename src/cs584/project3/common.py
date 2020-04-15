@@ -10,6 +10,13 @@ from datetime import datetime
 from os.path import dirname, realpath
 from scipy.spatial.distance import euclidean
 
+PRINT_LEVEL = 10
+
+def print2(printObj, level):
+    if level <= PRINT_LEVEL:
+        print(printObj)
+    
+
 def getProjectRootDirectory():
     dirPath = dirname(realpath(__file__))
     projectDirPath = dirname(dirname(dirname(dirPath)))
@@ -55,8 +62,8 @@ def readIrisFileAsList():
     return irisData
 
 def readDigitsFile():
-    relativePath = constants.IRIS_DATA_FILE
-    digitsData = np.ndarray(shape=(10740, 784))
+    relativePath = constants.HANDWRITTEN_DIGITS_FILE
+    digitsData = np.ndarray(shape=(10740, 784), dtype=np.uint8)
     
     rootDirectory = getProjectRootDirectory()
     filePath = os.path.join(rootDirectory, relativePath)
@@ -65,7 +72,7 @@ def readDigitsFile():
     index = 0
     for dataFileLine in dataFile:
         parts = dataFileLine.split(",")
-        dataRow = np.array([int(k) for k in range(parts)],dtype=np.int16)
+        dataRow = np.array([int(k) for k in parts], dtype=np.uint8)
         digitsData[index, :] = dataRow
         index += 1
         
@@ -91,6 +98,14 @@ def writeResultsFile(resultsArray):
     outputFile.close()
     
     print("Finished creating output file. Path is: " + relativePath)
+
+def euclideanDistanceFunction(a, b):
+    return euclidean(a, b)
+
+def digitsDataCenterFunction(X):
+    totalElements = X.shape[0]
+    if totalElements > 0:
+        return np.sum(a=X, axis=0, dtype=np.single) / totalElements
 
 def irisDataDistanceFunction(a, b):
     return euclidean(a, b)

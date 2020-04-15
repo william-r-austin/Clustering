@@ -1,5 +1,5 @@
 '''
-Created on Apr 13, 2020
+Created on Apr 14, 2020
 
 @author: William
 '''
@@ -10,7 +10,8 @@ import numpy as np
 import cs584.project3.kmeans_clustering as kmclustering
 import cs584.project3.kmeans_init as kminit
 
-def tuneSubmission01():
+
+def submission01(createOutput):
     X = common.readDigitsFile()
     print("Shape of Digits file  = " + str(X.shape))
     X_new = digitutil.preprocessDownsampling(X)
@@ -18,7 +19,7 @@ def tuneSubmission01():
     #print("First 10 rows are: ")
     #print(X_new[0:10, :])
     
-    numTrials = 1
+    numTrials = 10
     X_normalized = normalize(X, norm='l2', axis=0)
     distanceFunc = common.euclideanDistanceFunction
     centerFunc = common.digitsDataCenterFunction
@@ -44,6 +45,5 @@ def tuneSubmission01():
         
     print("Finished K-Means. Best Error Total = " + str(bestErrorTotal))
     #print("Best Assignments = " + str(bestAssignments))
-
-if __name__ == '__main__':
-    tuneSubmission01()    
+    if createOutput:
+        common.writeResultsFile(bestAssignments)
