@@ -9,6 +9,7 @@ from scipy.spatial.distance import euclidean
 import numpy as np
 import cs584.project3.kmeans_clustering as kmclustering
 import cs584.project3.kmeans_init as kminit
+import cs584.project3.kmeans_iris as kmiris
 
 def calculateClassCenters(X, clusterLabels, clusterClasses):
     centers = {}

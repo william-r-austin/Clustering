@@ -11,12 +11,13 @@ class BasicKMeansClusteringModel(object):
     '''
     classdocs
     '''
-    def __init__(self, distanceFunction, centerFunction):
+    def __init__(self, distanceFunction, centerFunction, maxIterations=35):
         '''
         Constructor
         '''
         self.distanceFunction = distanceFunction
         self.centerFunction = centerFunction
+        self.maxIterations = maxIterations
 
         self.finalClusterCenters = None
         self.finalClusterAssignments = None
@@ -43,7 +44,7 @@ class BasicKMeansClusteringModel(object):
         
         converged = False
         iteration = 0
-        while not converged and iteration < 25:
+        while not converged and iteration < self.maxIterations:
             #centers = calculateClassCenters(X, clusterLabels, clusterClasses)
             isInitialAssignment = (iteration == 0)
             totalChanges = \
@@ -65,10 +66,11 @@ class BasicKMeansClusteringModel(object):
                     clusterAssignments[r] = closestClusterNum
                     totalChanges += 1
             '''
-            #print("FINISHED ITERATION " + str(iteration))
+            #print("Finished Iteration #" + str(iteration) + " with total cluster changes = " + str(totalChanges)) 
             if totalChanges == 0:
                 converged = True
-                #print("Complete! Final Centers are below: ")
+                
+                #print("K-Means Complete!")
                 
                 #for clusterNum, clusterCenter in centers.items():
                 #    print("Center of Cluster #" + str(clusterNum) + " = " + str(clusterCenter))

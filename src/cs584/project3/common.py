@@ -15,7 +15,35 @@ PRINT_LEVEL = 10
 def print2(printObj, level):
     if level <= PRINT_LEVEL:
         print(printObj)
+
+def readMNIST(recordsToRead=10000):
+    requestedSamples = min(recordsToRead, 10000)
+    relativePath = "resources\\mnist\\mnist_train.csv"
+    digitData = np.ndarray(shape=(requestedSamples, 784), dtype=np.single)
+    digitLabels = np.ndarray(shape=(requestedSamples,), dtype=np.uint8)
     
+    rootDirectory = getProjectRootDirectory()
+    filePath = os.path.join(rootDirectory, relativePath)
+    
+    dataFile = open(filePath, "r")
+    # Read the header
+    dataFile.readline()
+    
+    index = 0
+    dataFileLine = dataFile.readline()
+    
+    
+    while index < recordsToRead:
+        parts = dataFileLine.split(",")
+        dataRow = np.array([int(k) for k in parts], dtype=np.uint8)
+        digitData[index, :] = dataRow[1:]
+        digitLabels[index] = dataRow[0]
+        
+        dataFileLine = dataFile.readline()
+        index += 1
+        
+    dataFile.close()
+    return digitData, digitLabels
 
 def getProjectRootDirectory():
     dirPath = dirname(realpath(__file__))

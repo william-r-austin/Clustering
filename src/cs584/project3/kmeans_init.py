@@ -5,6 +5,7 @@ Created on Apr 13, 2020
 '''
 import numpy as np
 import cs584.project3.kmeans_util as kmutil
+import random
 
 def initKMeansRandomly(X, clusterLabels, centerFunction, distanceFunction):
     clusterAssignments = np.random.choice(clusterLabels, X.shape[0])
@@ -29,6 +30,47 @@ def initKMeansSampling(X, clusterLabels):
     #return (clusterAssignments, clusterCenters)
     return clusterCenters
 
-def initKMeansKMeansPlusPlus(X, labels):
-    pass
+def initKMeansKMeansPlusPlus(X, clusterLabels, distanceFunction):
+    availableClusterIndexList = list(range(X.shape[0])) 
+    chosenClusterIndexList = []
+    currentClusterNum = 0
+    totalClusterCount = clusterLabels.shape[0]
+    
+    # Choose the first center
+    firstClusterIndex = np.random.choice(a=availableClusterIndexList, size=None)
+    availableClusterIndexList.remove(firstClusterIndex)
+    chosenClusterIndexList.append(firstClusterIndex)
+    currentClusterNum += 1
+        
+    while currentClusterNum < totalClusterCount:
+        availableClusterCount = len(availableClusterIndexList)
+        distanceInitialized = False
+        availableClusterDistance = np.ndarray(shape=(availableClusterCount,), dtype=np.single)
+        
+        for existingCenterIndex in chosenClusterIndexList:
+            for availableIndex, globalIndex in enumerate(availableClusterIndexList):
+                centerSample = X[existingCenterIndex, :]
+                candidateSample = X[globalIndex, :]
+                distance = distanceFunction(centerSample, candidateSample)
+                if not distanceInitialized:
+                    availableClusterDistance[availableIndex] = distance
+                else:
+                    if availableClusterDistance[availableIndex] < distance:
+                        availableClusterDistance[availableIndex] = distance
+                    distanceInitialized = True
+                
+        weights = np.square(availableClusterDistance)
+        sumWeights = np.sum(a=weights, axis=0)
+        weights = weights / sumWeights
+        
+        chosenCluster = np.random.choice(a=availableClusterIndexList, size=None, p=weights)
+        availableClusterIndexList.remove(chosenCluster)
+        chosenClusterIndexList.append(chosenCluster)
+        currentClusterNum += 1
+        
+    clusterCenters = {}
+    for clusterLabel, clusterCenterIndex in zip(clusterLabels, chosenClusterIndexList):
+        clusterCenters[clusterLabel] = X[clusterCenterIndex, :]
+    
+    return clusterCenters
     
