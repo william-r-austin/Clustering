@@ -2,3 +2,5 @@
 .pydevproject
 **/__pycache__
 resources/mnist/mnist_train.csv
+resources/mnist/mnist_test.csv
+resources/mnist/mnist-in-csv.zip
