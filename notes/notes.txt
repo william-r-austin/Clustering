@@ -1,0 +1,39 @@
+- Basic k-means
+  - basic operations (centers + assignments)
+  - initialization
+  - Talk about empty clusters
+
+Cluster evaluation
+- SSE
+
+
+----------------------------
+
+dimensionality reduction
+- Many techniques did not work because the data is not labeled.
+- PCA vs downsampling.
+
+
+preprocessing! (Normalized Iris DAta)
+Downsampling Image data
+- Convert Image dataset from uint8 to float
+
+
+tuning t-SNE - Show Charts!!
+- Perplexity
+- Learning Rate
+- # of Components - did not work!
+Talk about MNIST - show images
+
+mention running time + approximate big-oh.
+
+Mention that labeled data may be helpful.
+
+
+
+Left to do.
+-----------
+1. Iris dataset - use tnse, standard scaling, compare basic vs bisecting.
+2. Compare initialization type.
+
+3. Image dataset - Basic vs. Bisecting

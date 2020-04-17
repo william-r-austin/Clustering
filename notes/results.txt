@@ -1,0 +1,2202 @@
+########################################################################
+# First Submission. Basic K-Means. 
+# Using random initialization, and normalized inputs.
+# Output is below.
+# Still need to refactor into a class and implement SSE to identify
+# cluster quality!
+########################################################################
+FINISHED ITERATION 1
+Total changes = 90
+FINISHED ITERATION 2
+Total changes = 33
+FINISHED ITERATION 3
+Total changes = 12
+FINISHED ITERATION 4
+Total changes = 6
+FINISHED ITERATION 5
+Complete! Final Centers are below: 
+Center of Cluster #1 = [0.09186403 0.07985603 0.10952998 0.11826516]
+Center of Cluster #2 = [0.06926207 0.09047997 0.02880573 0.01403365]
+Center of Cluster #3 = [0.08181754 0.07249149 0.08453131 0.07620734]
+
+
+
+
+
+
+
+
+
+
+Second Submission - 
+
+Using full class implementation of basic k-means clustering + normalized data + random sampling for initial clusters
+
+====== Done with Trial # 1 / 25
+Error Total = 0.10603972449674934
+Improved total SSE! New Value = 0.10603972449674934
+====== Done with Trial # 2 / 25
+Error Total = 0.04618174298176433
+Improved total SSE! New Value = 0.04618174298176433
+====== Done with Trial # 3 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 4 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 5 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 6 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 7 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 8 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 9 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 10 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 11 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 12 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 13 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 14 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 15 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 16 / 25
+Error Total = 0.1071597955271511
+====== Done with Trial # 17 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 18 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 19 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 20 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 21 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 22 / 25
+Error Total = 0.04618174298176433
+====== Done with Trial # 23 / 25
+Error Total = 0.10603972449674934
+====== Done with Trial # 24 / 25
+Error Total = 0.10600756630473641
+====== Done with Trial # 25 / 25
+Error Total = 0.04618174298176433
+Finished K-Means. Best Error Total = 0.04618174298176433
+Best Assignments = [1 1 1 1 1 1 3 3 1 1 1 1 1 1 1 3 1 1 1 1 1 1 1 1 3 3 2 1 1 1 1 1 1 1 1 1 3
+ 3 3 2 1 1 3 3 3 3 3 3 2 2 1 1 1 1 1 3 3 3 3 2 2 2 1 1 1 1 1 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 2 2 2 2 2 2 2 1 1 1 1 1 1 3 3 2 2 2 2 2 2 2 1 3 3 3 3 3 2 3 3
+ 2 2 2 2 2 2 3 3 3 2 3 2 2 2 2 3 2 2 2 2 3 3 3 2 2 2 2 2 2 2 2 2 2 2 1 2 2
+ 2 2]
+Finished creating output file. Path is: resources\output\prediction_waustin_2020-04-14-18-16-06.txt
+
+
+
+
+
+
+Third Submission (Did not submit). IRIS Data Set, but with Bisecting K-Means
+
+Same error rate.
+
+
+Next Submission is t-SNE with 35 / 400 for perplexion / learning rate. No downsampling, full data set. Run time is about 15 - 20 minutes.
+
+Shape of Digits file  = (10740, 784)
+Starting t-SNE.
+Finished t-SNE, and got X_new. Shape = (10740, 2)
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 1474
+Finished Iteration #2 with total cluster changes = 1056
+Finished Iteration #3 with total cluster changes = 577
+Finished Iteration #4 with total cluster changes = 389
+Finished Iteration #5 with total cluster changes = 368
+Finished Iteration #6 with total cluster changes = 252
+Finished Iteration #7 with total cluster changes = 140
+Finished Iteration #8 with total cluster changes = 100
+Finished Iteration #9 with total cluster changes = 105
+Finished Iteration #10 with total cluster changes = 94
+Finished Iteration #11 with total cluster changes = 112
+Finished Iteration #12 with total cluster changes = 133
+Finished Iteration #13 with total cluster changes = 122
+Finished Iteration #14 with total cluster changes = 111
+Finished Iteration #15 with total cluster changes = 136
+Finished Iteration #16 with total cluster changes = 131
+Finished Iteration #17 with total cluster changes = 106
+Finished Iteration #18 with total cluster changes = 77
+Finished Iteration #19 with total cluster changes = 36
+Finished Iteration #20 with total cluster changes = 44
+Finished Iteration #21 with total cluster changes = 42
+Finished Iteration #22 with total cluster changes = 33
+Finished Iteration #23 with total cluster changes = 30
+Finished Iteration #24 with total cluster changes = 23
+Finished Iteration #25 with total cluster changes = 15
+Finished Iteration #26 with total cluster changes = 8
+Finished Iteration #27 with total cluster changes = 4
+Finished Iteration #28 with total cluster changes = 2
+Finished Iteration #29 with total cluster changes = 1
+Finished Iteration #30 with total cluster changes = 0
+====== Done with Trial # 1 / 5, Error Total = 5314376.435613003 ======
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 1871
+Finished Iteration #2 with total cluster changes = 776
+Finished Iteration #3 with total cluster changes = 504
+Finished Iteration #4 with total cluster changes = 387
+Finished Iteration #5 with total cluster changes = 289
+Finished Iteration #6 with total cluster changes = 229
+Finished Iteration #7 with total cluster changes = 147
+Finished Iteration #8 with total cluster changes = 131
+Finished Iteration #9 with total cluster changes = 111
+Finished Iteration #10 with total cluster changes = 98
+Finished Iteration #11 with total cluster changes = 104
+Finished Iteration #12 with total cluster changes = 116
+Finished Iteration #13 with total cluster changes = 120
+Finished Iteration #14 with total cluster changes = 118
+Finished Iteration #15 with total cluster changes = 128
+Finished Iteration #16 with total cluster changes = 131
+Finished Iteration #17 with total cluster changes = 117
+Finished Iteration #18 with total cluster changes = 110
+Finished Iteration #19 with total cluster changes = 109
+Finished Iteration #20 with total cluster changes = 110
+Finished Iteration #21 with total cluster changes = 110
+Finished Iteration #22 with total cluster changes = 102
+Finished Iteration #23 with total cluster changes = 120
+Finished Iteration #24 with total cluster changes = 144
+Finished Iteration #25 with total cluster changes = 186
+Finished Iteration #26 with total cluster changes = 195
+Finished Iteration #27 with total cluster changes = 155
+Finished Iteration #28 with total cluster changes = 110
+Finished Iteration #29 with total cluster changes = 114
+Finished Iteration #30 with total cluster changes = 116
+Finished Iteration #31 with total cluster changes = 76
+Finished Iteration #32 with total cluster changes = 56
+Finished Iteration #33 with total cluster changes = 50
+Finished Iteration #34 with total cluster changes = 33
+Finished Iteration #35 with total cluster changes = 37
+Finished Iteration #36 with total cluster changes = 37
+Finished Iteration #37 with total cluster changes = 23
+Finished Iteration #38 with total cluster changes = 21
+Finished Iteration #39 with total cluster changes = 12
+Finished Iteration #40 with total cluster changes = 7
+Finished Iteration #41 with total cluster changes = 6
+Finished Iteration #42 with total cluster changes = 5
+Finished Iteration #43 with total cluster changes = 8
+Finished Iteration #44 with total cluster changes = 4
+Finished Iteration #45 with total cluster changes = 3
+Finished Iteration #46 with total cluster changes = 3
+Finished Iteration #47 with total cluster changes = 3
+Finished Iteration #48 with total cluster changes = 2
+Finished Iteration #49 with total cluster changes = 0
+====== Done with Trial # 2 / 5, Error Total = 4658513.38149528 ======
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 1980
+Finished Iteration #2 with total cluster changes = 1543
+Finished Iteration #3 with total cluster changes = 1122
+Finished Iteration #4 with total cluster changes = 733
+Finished Iteration #5 with total cluster changes = 551
+Finished Iteration #6 with total cluster changes = 395
+Finished Iteration #7 with total cluster changes = 269
+Finished Iteration #8 with total cluster changes = 187
+Finished Iteration #9 with total cluster changes = 155
+Finished Iteration #10 with total cluster changes = 109
+Finished Iteration #11 with total cluster changes = 91
+Finished Iteration #12 with total cluster changes = 72
+Finished Iteration #13 with total cluster changes = 67
+Finished Iteration #14 with total cluster changes = 71
+Finished Iteration #15 with total cluster changes = 75
+Finished Iteration #16 with total cluster changes = 86
+Finished Iteration #17 with total cluster changes = 78
+Finished Iteration #18 with total cluster changes = 84
+Finished Iteration #19 with total cluster changes = 88
+Finished Iteration #20 with total cluster changes = 86
+Finished Iteration #21 with total cluster changes = 102
+Finished Iteration #22 with total cluster changes = 109
+Finished Iteration #23 with total cluster changes = 112
+Finished Iteration #24 with total cluster changes = 106
+Finished Iteration #25 with total cluster changes = 105
+Finished Iteration #26 with total cluster changes = 106
+Finished Iteration #27 with total cluster changes = 115
+Finished Iteration #28 with total cluster changes = 106
+Finished Iteration #29 with total cluster changes = 137
+Finished Iteration #30 with total cluster changes = 132
+Finished Iteration #31 with total cluster changes = 104
+Finished Iteration #32 with total cluster changes = 96
+Finished Iteration #33 with total cluster changes = 77
+Finished Iteration #34 with total cluster changes = 70
+Finished Iteration #35 with total cluster changes = 70
+Finished Iteration #36 with total cluster changes = 54
+Finished Iteration #37 with total cluster changes = 64
+Finished Iteration #38 with total cluster changes = 55
+Finished Iteration #39 with total cluster changes = 55
+Finished Iteration #40 with total cluster changes = 55
+Finished Iteration #41 with total cluster changes = 56
+Finished Iteration #42 with total cluster changes = 57
+Finished Iteration #43 with total cluster changes = 47
+Finished Iteration #44 with total cluster changes = 48
+Finished Iteration #45 with total cluster changes = 43
+Finished Iteration #46 with total cluster changes = 32
+Finished Iteration #47 with total cluster changes = 28
+Finished Iteration #48 with total cluster changes = 17
+Finished Iteration #49 with total cluster changes = 11
+Finished Iteration #50 with total cluster changes = 9
+Finished Iteration #51 with total cluster changes = 12
+Finished Iteration #52 with total cluster changes = 8
+Finished Iteration #53 with total cluster changes = 6
+Finished Iteration #54 with total cluster changes = 2
+Finished Iteration #55 with total cluster changes = 4
+Finished Iteration #56 with total cluster changes = 3
+Finished Iteration #57 with total cluster changes = 3
+Finished Iteration #58 with total cluster changes = 0
+====== Done with Trial # 3 / 5, Error Total = 4658495.448004108 ======
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 2146
+Finished Iteration #2 with total cluster changes = 1261
+Finished Iteration #3 with total cluster changes = 759
+Finished Iteration #4 with total cluster changes = 487
+Finished Iteration #5 with total cluster changes = 344
+Finished Iteration #6 with total cluster changes = 307
+Finished Iteration #7 with total cluster changes = 303
+Finished Iteration #8 with total cluster changes = 337
+Finished Iteration #9 with total cluster changes = 387
+Finished Iteration #10 with total cluster changes = 446
+Finished Iteration #11 with total cluster changes = 473
+Finished Iteration #12 with total cluster changes = 425
+Finished Iteration #13 with total cluster changes = 391
+Finished Iteration #14 with total cluster changes = 354
+Finished Iteration #15 with total cluster changes = 321
+Finished Iteration #16 with total cluster changes = 225
+Finished Iteration #17 with total cluster changes = 169
+Finished Iteration #18 with total cluster changes = 119
+Finished Iteration #19 with total cluster changes = 102
+Finished Iteration #20 with total cluster changes = 76
+Finished Iteration #21 with total cluster changes = 67
+Finished Iteration #22 with total cluster changes = 65
+Finished Iteration #23 with total cluster changes = 72
+Finished Iteration #24 with total cluster changes = 76
+Finished Iteration #25 with total cluster changes = 65
+Finished Iteration #26 with total cluster changes = 56
+Finished Iteration #27 with total cluster changes = 58
+Finished Iteration #28 with total cluster changes = 67
+Finished Iteration #29 with total cluster changes = 84
+Finished Iteration #30 with total cluster changes = 72
+Finished Iteration #31 with total cluster changes = 69
+Finished Iteration #32 with total cluster changes = 59
+Finished Iteration #33 with total cluster changes = 59
+Finished Iteration #34 with total cluster changes = 49
+Finished Iteration #35 with total cluster changes = 33
+Finished Iteration #36 with total cluster changes = 28
+Finished Iteration #37 with total cluster changes = 18
+Finished Iteration #38 with total cluster changes = 20
+Finished Iteration #39 with total cluster changes = 17
+Finished Iteration #40 with total cluster changes = 14
+Finished Iteration #41 with total cluster changes = 13
+Finished Iteration #42 with total cluster changes = 10
+Finished Iteration #43 with total cluster changes = 6
+Finished Iteration #44 with total cluster changes = 4
+Finished Iteration #45 with total cluster changes = 3
+Finished Iteration #46 with total cluster changes = 3
+Finished Iteration #47 with total cluster changes = 0
+====== Done with Trial # 4 / 5, Error Total = 4658495.448004107 ======
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 2053
+Finished Iteration #2 with total cluster changes = 1093
+Finished Iteration #3 with total cluster changes = 420
+Finished Iteration #4 with total cluster changes = 210
+Finished Iteration #5 with total cluster changes = 137
+Finished Iteration #6 with total cluster changes = 75
+Finished Iteration #7 with total cluster changes = 47
+Finished Iteration #8 with total cluster changes = 34
+Finished Iteration #9 with total cluster changes = 33
+Finished Iteration #10 with total cluster changes = 24
+Finished Iteration #11 with total cluster changes = 16
+Finished Iteration #12 with total cluster changes = 11
+Finished Iteration #13 with total cluster changes = 8
+Finished Iteration #14 with total cluster changes = 10
+Finished Iteration #15 with total cluster changes = 4
+Finished Iteration #16 with total cluster changes = 6
+Finished Iteration #17 with total cluster changes = 3
+Finished Iteration #18 with total cluster changes = 2
+Finished Iteration #19 with total cluster changes = 3
+Finished Iteration #20 with total cluster changes = 2
+Finished Iteration #21 with total cluster changes = 1
+Finished Iteration #22 with total cluster changes = 1
+Finished Iteration #23 with total cluster changes = 0
+====== Done with Trial # 5 / 5, Error Total = 4989441.906122155 ======
+Finished K-Means with t-SNE, P=. Best Error Total = 4658495.448004107
+Finished creating output file. Path is: resources\output\prediction_waustin_2020-04-15-17-56-57.txt
+
+
+
+
+
+
+
+
+Next = Same as above, but with Bisecting K-Means
+
+Shape of Digits file  = (10740, 784)
+Starting t-SNE.
+Finished t-SNE, and got X_new. Shape = (10740, 2)
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 164
+Finished Iteration #2 with total cluster changes = 56
+Finished Iteration #3 with total cluster changes = 13
+Finished Iteration #4 with total cluster changes = 1
+Finished Iteration #5 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 620
+Finished Iteration #2 with total cluster changes = 162
+Finished Iteration #3 with total cluster changes = 31
+Finished Iteration #4 with total cluster changes = 2
+Finished Iteration #5 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 256
+Finished Iteration #2 with total cluster changes = 270
+Finished Iteration #3 with total cluster changes = 495
+Finished Iteration #4 with total cluster changes = 692
+Finished Iteration #5 with total cluster changes = 526
+Finished Iteration #6 with total cluster changes = 94
+Finished Iteration #7 with total cluster changes = 18
+Finished Iteration #8 with total cluster changes = 1
+Finished Iteration #9 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5453
+Finished Iteration #1 with total cluster changes = 647
+Finished Iteration #2 with total cluster changes = 156
+Finished Iteration #3 with total cluster changes = 101
+Finished Iteration #4 with total cluster changes = 85
+Finished Iteration #5 with total cluster changes = 77
+Finished Iteration #6 with total cluster changes = 75
+Finished Iteration #7 with total cluster changes = 66
+Finished Iteration #8 with total cluster changes = 84
+Finished Iteration #9 with total cluster changes = 69
+Finished Iteration #10 with total cluster changes = 68
+Finished Iteration #11 with total cluster changes = 72
+Finished Iteration #12 with total cluster changes = 52
+Finished Iteration #13 with total cluster changes = 48
+Finished Iteration #14 with total cluster changes = 21
+Finished Iteration #15 with total cluster changes = 18
+Finished Iteration #16 with total cluster changes = 11
+Finished Iteration #17 with total cluster changes = 9
+Finished Iteration #18 with total cluster changes = 8
+Finished Iteration #19 with total cluster changes = 6
+Finished Iteration #20 with total cluster changes = 2
+Finished Iteration #21 with total cluster changes = 2
+Finished Iteration #22 with total cluster changes = 1
+Finished Iteration #23 with total cluster changes = 1
+Finished Iteration #24 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5453
+Finished Iteration #1 with total cluster changes = 970
+Finished Iteration #2 with total cluster changes = 682
+Finished Iteration #3 with total cluster changes = 202
+Finished Iteration #4 with total cluster changes = 95
+Finished Iteration #5 with total cluster changes = 73
+Finished Iteration #6 with total cluster changes = 75
+Finished Iteration #7 with total cluster changes = 56
+Finished Iteration #8 with total cluster changes = 42
+Finished Iteration #9 with total cluster changes = 20
+Finished Iteration #10 with total cluster changes = 17
+Finished Iteration #11 with total cluster changes = 11
+Finished Iteration #12 with total cluster changes = 9
+Finished Iteration #13 with total cluster changes = 8
+Finished Iteration #14 with total cluster changes = 6
+Finished Iteration #15 with total cluster changes = 2
+Finished Iteration #16 with total cluster changes = 2
+Finished Iteration #17 with total cluster changes = 1
+Finished Iteration #18 with total cluster changes = 1
+Finished Iteration #19 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5453
+Finished Iteration #1 with total cluster changes = 720
+Finished Iteration #2 with total cluster changes = 222
+Finished Iteration #3 with total cluster changes = 82
+Finished Iteration #4 with total cluster changes = 37
+Finished Iteration #5 with total cluster changes = 21
+Finished Iteration #6 with total cluster changes = 13
+Finished Iteration #7 with total cluster changes = 11
+Finished Iteration #8 with total cluster changes = 5
+Finished Iteration #9 with total cluster changes = 1
+Finished Iteration #10 with total cluster changes = 1
+Finished Iteration #11 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5287
+Finished Iteration #1 with total cluster changes = 255
+Finished Iteration #2 with total cluster changes = 55
+Finished Iteration #3 with total cluster changes = 16
+Finished Iteration #4 with total cluster changes = 8
+Finished Iteration #5 with total cluster changes = 3
+Finished Iteration #6 with total cluster changes = 2
+Finished Iteration #7 with total cluster changes = 1
+Finished Iteration #8 with total cluster changes = 1
+Finished Iteration #9 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5287
+Finished Iteration #1 with total cluster changes = 598
+Finished Iteration #2 with total cluster changes = 363
+Finished Iteration #3 with total cluster changes = 282
+Finished Iteration #4 with total cluster changes = 151
+Finished Iteration #5 with total cluster changes = 69
+Finished Iteration #6 with total cluster changes = 31
+Finished Iteration #7 with total cluster changes = 13
+Finished Iteration #8 with total cluster changes = 3
+Finished Iteration #9 with total cluster changes = 2
+Finished Iteration #10 with total cluster changes = 2
+Finished Iteration #11 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5287
+Finished Iteration #1 with total cluster changes = 311
+Finished Iteration #2 with total cluster changes = 79
+Finished Iteration #3 with total cluster changes = 31
+Finished Iteration #4 with total cluster changes = 18
+Finished Iteration #5 with total cluster changes = 12
+Finished Iteration #6 with total cluster changes = 3
+Finished Iteration #7 with total cluster changes = 3
+Finished Iteration #8 with total cluster changes = 1
+Finished Iteration #9 with total cluster changes = 1
+Finished Iteration #10 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3786
+Finished Iteration #1 with total cluster changes = 406
+Finished Iteration #2 with total cluster changes = 187
+Finished Iteration #3 with total cluster changes = 122
+Finished Iteration #4 with total cluster changes = 60
+Finished Iteration #5 with total cluster changes = 39
+Finished Iteration #6 with total cluster changes = 22
+Finished Iteration #7 with total cluster changes = 26
+Finished Iteration #8 with total cluster changes = 22
+Finished Iteration #9 with total cluster changes = 24
+Finished Iteration #10 with total cluster changes = 30
+Finished Iteration #11 with total cluster changes = 47
+Finished Iteration #12 with total cluster changes = 58
+Finished Iteration #13 with total cluster changes = 47
+Finished Iteration #14 with total cluster changes = 20
+Finished Iteration #15 with total cluster changes = 10
+Finished Iteration #16 with total cluster changes = 5
+Finished Iteration #17 with total cluster changes = 3
+Finished Iteration #18 with total cluster changes = 3
+Finished Iteration #19 with total cluster changes = 1
+Finished Iteration #20 with total cluster changes = 1
+Finished Iteration #21 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3786
+Finished Iteration #1 with total cluster changes = 543
+Finished Iteration #2 with total cluster changes = 226
+Finished Iteration #3 with total cluster changes = 106
+Finished Iteration #4 with total cluster changes = 53
+Finished Iteration #5 with total cluster changes = 42
+Finished Iteration #6 with total cluster changes = 45
+Finished Iteration #7 with total cluster changes = 51
+Finished Iteration #8 with total cluster changes = 62
+Finished Iteration #9 with total cluster changes = 39
+Finished Iteration #10 with total cluster changes = 11
+Finished Iteration #11 with total cluster changes = 4
+Finished Iteration #12 with total cluster changes = 2
+Finished Iteration #13 with total cluster changes = 1
+Finished Iteration #14 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3786
+Finished Iteration #1 with total cluster changes = 449
+Finished Iteration #2 with total cluster changes = 196
+Finished Iteration #3 with total cluster changes = 170
+Finished Iteration #4 with total cluster changes = 123
+Finished Iteration #5 with total cluster changes = 67
+Finished Iteration #6 with total cluster changes = 30
+Finished Iteration #7 with total cluster changes = 15
+Finished Iteration #8 with total cluster changes = 12
+Finished Iteration #9 with total cluster changes = 6
+Finished Iteration #10 with total cluster changes = 2
+Finished Iteration #11 with total cluster changes = 4
+Finished Iteration #12 with total cluster changes = 1
+Finished Iteration #13 with total cluster changes = 1
+Finished Iteration #14 with total cluster changes = 1
+Finished Iteration #15 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2991
+Finished Iteration #1 with total cluster changes = 41
+Finished Iteration #2 with total cluster changes = 2
+Finished Iteration #3 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2991
+Finished Iteration #1 with total cluster changes = 96
+Finished Iteration #2 with total cluster changes = 7
+Finished Iteration #3 with total cluster changes = 2
+Finished Iteration #4 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2991
+Finished Iteration #1 with total cluster changes = 286
+Finished Iteration #2 with total cluster changes = 154
+Finished Iteration #3 with total cluster changes = 27
+Finished Iteration #4 with total cluster changes = 2
+Finished Iteration #5 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2296
+Finished Iteration #1 with total cluster changes = 42
+Finished Iteration #2 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2296
+Finished Iteration #1 with total cluster changes = 27
+Finished Iteration #2 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2296
+Finished Iteration #1 with total cluster changes = 170
+Finished Iteration #2 with total cluster changes = 546
+Finished Iteration #3 with total cluster changes = 345
+Finished Iteration #4 with total cluster changes = 31
+Finished Iteration #5 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2201
+Finished Iteration #1 with total cluster changes = 177
+Finished Iteration #2 with total cluster changes = 128
+Finished Iteration #3 with total cluster changes = 77
+Finished Iteration #4 with total cluster changes = 32
+Finished Iteration #5 with total cluster changes = 18
+Finished Iteration #6 with total cluster changes = 10
+Finished Iteration #7 with total cluster changes = 4
+Finished Iteration #8 with total cluster changes = 4
+Finished Iteration #9 with total cluster changes = 3
+Finished Iteration #10 with total cluster changes = 3
+Finished Iteration #11 with total cluster changes = 4
+Finished Iteration #12 with total cluster changes = 2
+Finished Iteration #13 with total cluster changes = 2
+Finished Iteration #14 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2201
+Finished Iteration #1 with total cluster changes = 130
+Finished Iteration #2 with total cluster changes = 96
+Finished Iteration #3 with total cluster changes = 61
+Finished Iteration #4 with total cluster changes = 69
+Finished Iteration #5 with total cluster changes = 129
+Finished Iteration #6 with total cluster changes = 194
+Finished Iteration #7 with total cluster changes = 154
+Finished Iteration #8 with total cluster changes = 114
+Finished Iteration #9 with total cluster changes = 68
+Finished Iteration #10 with total cluster changes = 20
+Finished Iteration #11 with total cluster changes = 9
+Finished Iteration #12 with total cluster changes = 4
+Finished Iteration #13 with total cluster changes = 4
+Finished Iteration #14 with total cluster changes = 4
+Finished Iteration #15 with total cluster changes = 3
+Finished Iteration #16 with total cluster changes = 4
+Finished Iteration #17 with total cluster changes = 2
+Finished Iteration #18 with total cluster changes = 2
+Finished Iteration #19 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2201
+Finished Iteration #1 with total cluster changes = 121
+Finished Iteration #2 with total cluster changes = 101
+Finished Iteration #3 with total cluster changes = 143
+Finished Iteration #4 with total cluster changes = 170
+Finished Iteration #5 with total cluster changes = 142
+Finished Iteration #6 with total cluster changes = 113
+Finished Iteration #7 with total cluster changes = 59
+Finished Iteration #8 with total cluster changes = 17
+Finished Iteration #9 with total cluster changes = 7
+Finished Iteration #10 with total cluster changes = 4
+Finished Iteration #11 with total cluster changes = 4
+Finished Iteration #12 with total cluster changes = 4
+Finished Iteration #13 with total cluster changes = 3
+Finished Iteration #14 with total cluster changes = 4
+Finished Iteration #15 with total cluster changes = 2
+Finished Iteration #16 with total cluster changes = 2
+Finished Iteration #17 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1667
+Finished Iteration #1 with total cluster changes = 93
+Finished Iteration #2 with total cluster changes = 23
+Finished Iteration #3 with total cluster changes = 13
+Finished Iteration #4 with total cluster changes = 13
+Finished Iteration #5 with total cluster changes = 12
+Finished Iteration #6 with total cluster changes = 2
+Finished Iteration #7 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1667
+Finished Iteration #1 with total cluster changes = 136
+Finished Iteration #2 with total cluster changes = 64
+Finished Iteration #3 with total cluster changes = 34
+Finished Iteration #4 with total cluster changes = 14
+Finished Iteration #5 with total cluster changes = 14
+Finished Iteration #6 with total cluster changes = 9
+Finished Iteration #7 with total cluster changes = 5
+Finished Iteration #8 with total cluster changes = 4
+Finished Iteration #9 with total cluster changes = 3
+Finished Iteration #10 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1667
+Finished Iteration #1 with total cluster changes = 20
+Finished Iteration #2 with total cluster changes = 23
+Finished Iteration #3 with total cluster changes = 14
+Finished Iteration #4 with total cluster changes = 12
+Finished Iteration #5 with total cluster changes = 12
+Finished Iteration #6 with total cluster changes = 1
+Finished Iteration #7 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1620
+Finished Iteration #1 with total cluster changes = 462
+Finished Iteration #2 with total cluster changes = 317
+Finished Iteration #3 with total cluster changes = 92
+Finished Iteration #4 with total cluster changes = 35
+Finished Iteration #5 with total cluster changes = 16
+Finished Iteration #6 with total cluster changes = 6
+Finished Iteration #7 with total cluster changes = 1
+Finished Iteration #8 with total cluster changes = 1
+Finished Iteration #9 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1620
+Finished Iteration #1 with total cluster changes = 7
+Finished Iteration #2 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1620
+Finished Iteration #1 with total cluster changes = 6
+Finished Iteration #2 with total cluster changes = 0
+====== Done with Trial # 1 / 5, Error Total = 5605174.65336594 ======
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 375
+Finished Iteration #2 with total cluster changes = 195
+Finished Iteration #3 with total cluster changes = 158
+Finished Iteration #4 with total cluster changes = 122
+Finished Iteration #5 with total cluster changes = 130
+Finished Iteration #6 with total cluster changes = 105
+Finished Iteration #7 with total cluster changes = 121
+Finished Iteration #8 with total cluster changes = 132
+Finished Iteration #9 with total cluster changes = 131
+Finished Iteration #10 with total cluster changes = 112
+Finished Iteration #11 with total cluster changes = 42
+Finished Iteration #12 with total cluster changes = 12
+Finished Iteration #13 with total cluster changes = 3
+Finished Iteration #14 with total cluster changes = 1
+Finished Iteration #15 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 483
+Finished Iteration #2 with total cluster changes = 324
+Finished Iteration #3 with total cluster changes = 248
+Finished Iteration #4 with total cluster changes = 346
+Finished Iteration #5 with total cluster changes = 460
+Finished Iteration #6 with total cluster changes = 386
+Finished Iteration #7 with total cluster changes = 219
+Finished Iteration #8 with total cluster changes = 170
+Finished Iteration #9 with total cluster changes = 143
+Finished Iteration #10 with total cluster changes = 122
+Finished Iteration #11 with total cluster changes = 80
+Finished Iteration #12 with total cluster changes = 44
+Finished Iteration #13 with total cluster changes = 19
+Finished Iteration #14 with total cluster changes = 5
+Finished Iteration #15 with total cluster changes = 3
+Finished Iteration #16 with total cluster changes = 2
+Finished Iteration #17 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 278
+Finished Iteration #2 with total cluster changes = 63
+Finished Iteration #3 with total cluster changes = 35
+Finished Iteration #4 with total cluster changes = 35
+Finished Iteration #5 with total cluster changes = 25
+Finished Iteration #6 with total cluster changes = 35
+Finished Iteration #7 with total cluster changes = 30
+Finished Iteration #8 with total cluster changes = 29
+Finished Iteration #9 with total cluster changes = 42
+Finished Iteration #10 with total cluster changes = 35
+Finished Iteration #11 with total cluster changes = 19
+Finished Iteration #12 with total cluster changes = 8
+Finished Iteration #13 with total cluster changes = 12
+Finished Iteration #14 with total cluster changes = 12
+Finished Iteration #15 with total cluster changes = 17
+Finished Iteration #16 with total cluster changes = 19
+Finished Iteration #17 with total cluster changes = 19
+Finished Iteration #18 with total cluster changes = 13
+Finished Iteration #19 with total cluster changes = 20
+Finished Iteration #20 with total cluster changes = 14
+Finished Iteration #21 with total cluster changes = 10
+Finished Iteration #22 with total cluster changes = 12
+Finished Iteration #23 with total cluster changes = 10
+Finished Iteration #24 with total cluster changes = 7
+Finished Iteration #25 with total cluster changes = 12
+Finished Iteration #26 with total cluster changes = 20
+Finished Iteration #27 with total cluster changes = 21
+Finished Iteration #28 with total cluster changes = 33
+Finished Iteration #29 with total cluster changes = 33
+Finished Iteration #30 with total cluster changes = 45
+Finished Iteration #31 with total cluster changes = 57
+Finished Iteration #32 with total cluster changes = 64
+Finished Iteration #33 with total cluster changes = 80
+Finished Iteration #34 with total cluster changes = 84
+Finished Iteration #0 with total cluster changes = 5453
+Finished Iteration #1 with total cluster changes = 426
+Finished Iteration #2 with total cluster changes = 138
+Finished Iteration #3 with total cluster changes = 81
+Finished Iteration #4 with total cluster changes = 61
+Finished Iteration #5 with total cluster changes = 47
+Finished Iteration #6 with total cluster changes = 22
+Finished Iteration #7 with total cluster changes = 17
+Finished Iteration #8 with total cluster changes = 13
+Finished Iteration #9 with total cluster changes = 9
+Finished Iteration #10 with total cluster changes = 8
+Finished Iteration #11 with total cluster changes = 6
+Finished Iteration #12 with total cluster changes = 2
+Finished Iteration #13 with total cluster changes = 2
+Finished Iteration #14 with total cluster changes = 1
+Finished Iteration #15 with total cluster changes = 1
+Finished Iteration #16 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5453
+Finished Iteration #1 with total cluster changes = 427
+Finished Iteration #2 with total cluster changes = 247
+Finished Iteration #3 with total cluster changes = 170
+Finished Iteration #4 with total cluster changes = 121
+Finished Iteration #5 with total cluster changes = 87
+Finished Iteration #6 with total cluster changes = 87
+Finished Iteration #7 with total cluster changes = 75
+Finished Iteration #8 with total cluster changes = 69
+Finished Iteration #9 with total cluster changes = 63
+Finished Iteration #10 with total cluster changes = 82
+Finished Iteration #11 with total cluster changes = 70
+Finished Iteration #12 with total cluster changes = 68
+Finished Iteration #13 with total cluster changes = 67
+Finished Iteration #14 with total cluster changes = 59
+Finished Iteration #15 with total cluster changes = 39
+Finished Iteration #16 with total cluster changes = 20
+Finished Iteration #17 with total cluster changes = 16
+Finished Iteration #18 with total cluster changes = 11
+Finished Iteration #19 with total cluster changes = 9
+Finished Iteration #20 with total cluster changes = 8
+Finished Iteration #21 with total cluster changes = 4
+Finished Iteration #22 with total cluster changes = 2
+Finished Iteration #23 with total cluster changes = 2
+Finished Iteration #24 with total cluster changes = 1
+Finished Iteration #25 with total cluster changes = 1
+Finished Iteration #26 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5453
+Finished Iteration #1 with total cluster changes = 129
+Finished Iteration #2 with total cluster changes = 51
+Finished Iteration #3 with total cluster changes = 24
+Finished Iteration #4 with total cluster changes = 17
+Finished Iteration #5 with total cluster changes = 10
+Finished Iteration #6 with total cluster changes = 10
+Finished Iteration #7 with total cluster changes = 3
+Finished Iteration #8 with total cluster changes = 1
+Finished Iteration #9 with total cluster changes = 1
+Finished Iteration #10 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5287
+Finished Iteration #1 with total cluster changes = 637
+Finished Iteration #2 with total cluster changes = 404
+Finished Iteration #3 with total cluster changes = 294
+Finished Iteration #4 with total cluster changes = 175
+Finished Iteration #5 with total cluster changes = 88
+Finished Iteration #6 with total cluster changes = 36
+Finished Iteration #7 with total cluster changes = 16
+Finished Iteration #8 with total cluster changes = 3
+Finished Iteration #9 with total cluster changes = 1
+Finished Iteration #10 with total cluster changes = 2
+Finished Iteration #11 with total cluster changes = 2
+Finished Iteration #12 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5287
+Finished Iteration #1 with total cluster changes = 1058
+Finished Iteration #2 with total cluster changes = 497
+Finished Iteration #3 with total cluster changes = 345
+Finished Iteration #4 with total cluster changes = 240
+Finished Iteration #5 with total cluster changes = 134
+Finished Iteration #6 with total cluster changes = 50
+Finished Iteration #7 with total cluster changes = 25
+Finished Iteration #8 with total cluster changes = 9
+Finished Iteration #9 with total cluster changes = 2
+Finished Iteration #10 with total cluster changes = 2
+Finished Iteration #11 with total cluster changes = 2
+Finished Iteration #12 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5287
+Finished Iteration #1 with total cluster changes = 319
+Finished Iteration #2 with total cluster changes = 163
+Finished Iteration #3 with total cluster changes = 60
+Finished Iteration #4 with total cluster changes = 26
+Finished Iteration #5 with total cluster changes = 15
+Finished Iteration #6 with total cluster changes = 10
+Finished Iteration #7 with total cluster changes = 3
+Finished Iteration #8 with total cluster changes = 2
+Finished Iteration #9 with total cluster changes = 1
+Finished Iteration #10 with total cluster changes = 1
+Finished Iteration #11 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3786
+Finished Iteration #1 with total cluster changes = 551
+Finished Iteration #2 with total cluster changes = 191
+Finished Iteration #3 with total cluster changes = 93
+Finished Iteration #4 with total cluster changes = 53
+Finished Iteration #5 with total cluster changes = 38
+Finished Iteration #6 with total cluster changes = 26
+Finished Iteration #7 with total cluster changes = 24
+Finished Iteration #8 with total cluster changes = 21
+Finished Iteration #9 with total cluster changes = 30
+Finished Iteration #10 with total cluster changes = 40
+Finished Iteration #11 with total cluster changes = 63
+Finished Iteration #12 with total cluster changes = 51
+Finished Iteration #13 with total cluster changes = 30
+Finished Iteration #14 with total cluster changes = 11
+Finished Iteration #15 with total cluster changes = 5
+Finished Iteration #16 with total cluster changes = 3
+Finished Iteration #17 with total cluster changes = 3
+Finished Iteration #18 with total cluster changes = 1
+Finished Iteration #19 with total cluster changes = 1
+Finished Iteration #20 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3786
+Finished Iteration #1 with total cluster changes = 292
+Finished Iteration #2 with total cluster changes = 175
+Finished Iteration #3 with total cluster changes = 161
+Finished Iteration #4 with total cluster changes = 107
+Finished Iteration #5 with total cluster changes = 45
+Finished Iteration #6 with total cluster changes = 27
+Finished Iteration #7 with total cluster changes = 15
+Finished Iteration #8 with total cluster changes = 7
+Finished Iteration #9 with total cluster changes = 4
+Finished Iteration #10 with total cluster changes = 3
+Finished Iteration #11 with total cluster changes = 3
+Finished Iteration #12 with total cluster changes = 1
+Finished Iteration #13 with total cluster changes = 1
+Finished Iteration #14 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3786
+Finished Iteration #1 with total cluster changes = 425
+Finished Iteration #2 with total cluster changes = 157
+Finished Iteration #3 with total cluster changes = 96
+Finished Iteration #4 with total cluster changes = 53
+Finished Iteration #5 with total cluster changes = 35
+Finished Iteration #6 with total cluster changes = 23
+Finished Iteration #7 with total cluster changes = 25
+Finished Iteration #8 with total cluster changes = 23
+Finished Iteration #9 with total cluster changes = 24
+Finished Iteration #10 with total cluster changes = 30
+Finished Iteration #11 with total cluster changes = 47
+Finished Iteration #12 with total cluster changes = 58
+Finished Iteration #13 with total cluster changes = 47
+Finished Iteration #14 with total cluster changes = 20
+Finished Iteration #15 with total cluster changes = 10
+Finished Iteration #16 with total cluster changes = 5
+Finished Iteration #17 with total cluster changes = 3
+Finished Iteration #18 with total cluster changes = 3
+Finished Iteration #19 with total cluster changes = 1
+Finished Iteration #20 with total cluster changes = 1
+Finished Iteration #21 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2991
+Finished Iteration #1 with total cluster changes = 106
+Finished Iteration #2 with total cluster changes = 56
+Finished Iteration #3 with total cluster changes = 36
+Finished Iteration #4 with total cluster changes = 25
+Finished Iteration #5 with total cluster changes = 16
+Finished Iteration #6 with total cluster changes = 9
+Finished Iteration #7 with total cluster changes = 9
+Finished Iteration #8 with total cluster changes = 9
+Finished Iteration #9 with total cluster changes = 19
+Finished Iteration #10 with total cluster changes = 10
+Finished Iteration #11 with total cluster changes = 13
+Finished Iteration #12 with total cluster changes = 16
+Finished Iteration #13 with total cluster changes = 23
+Finished Iteration #14 with total cluster changes = 21
+Finished Iteration #15 with total cluster changes = 14
+Finished Iteration #16 with total cluster changes = 15
+Finished Iteration #17 with total cluster changes = 14
+Finished Iteration #18 with total cluster changes = 12
+Finished Iteration #19 with total cluster changes = 9
+Finished Iteration #20 with total cluster changes = 5
+Finished Iteration #21 with total cluster changes = 3
+Finished Iteration #22 with total cluster changes = 2
+Finished Iteration #23 with total cluster changes = 3
+Finished Iteration #24 with total cluster changes = 3
+Finished Iteration #25 with total cluster changes = 1
+Finished Iteration #26 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2991
+Finished Iteration #1 with total cluster changes = 278
+Finished Iteration #2 with total cluster changes = 85
+Finished Iteration #3 with total cluster changes = 37
+Finished Iteration #4 with total cluster changes = 19
+Finished Iteration #5 with total cluster changes = 23
+Finished Iteration #6 with total cluster changes = 19
+Finished Iteration #7 with total cluster changes = 14
+Finished Iteration #8 with total cluster changes = 15
+Finished Iteration #9 with total cluster changes = 14
+Finished Iteration #10 with total cluster changes = 12
+Finished Iteration #11 with total cluster changes = 9
+Finished Iteration #12 with total cluster changes = 5
+Finished Iteration #13 with total cluster changes = 3
+Finished Iteration #14 with total cluster changes = 2
+Finished Iteration #15 with total cluster changes = 3
+Finished Iteration #16 with total cluster changes = 3
+Finished Iteration #17 with total cluster changes = 1
+Finished Iteration #18 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2991
+Finished Iteration #1 with total cluster changes = 340
+Finished Iteration #2 with total cluster changes = 246
+Finished Iteration #3 with total cluster changes = 107
+Finished Iteration #4 with total cluster changes = 39
+Finished Iteration #5 with total cluster changes = 22
+Finished Iteration #6 with total cluster changes = 16
+Finished Iteration #7 with total cluster changes = 7
+Finished Iteration #8 with total cluster changes = 11
+Finished Iteration #9 with total cluster changes = 10
+Finished Iteration #10 with total cluster changes = 19
+Finished Iteration #11 with total cluster changes = 12
+Finished Iteration #12 with total cluster changes = 14
+Finished Iteration #13 with total cluster changes = 16
+Finished Iteration #14 with total cluster changes = 25
+Finished Iteration #15 with total cluster changes = 16
+Finished Iteration #16 with total cluster changes = 15
+Finished Iteration #17 with total cluster changes = 13
+Finished Iteration #18 with total cluster changes = 12
+Finished Iteration #19 with total cluster changes = 11
+Finished Iteration #20 with total cluster changes = 9
+Finished Iteration #21 with total cluster changes = 5
+Finished Iteration #22 with total cluster changes = 3
+Finished Iteration #23 with total cluster changes = 2
+Finished Iteration #24 with total cluster changes = 3
+Finished Iteration #25 with total cluster changes = 3
+Finished Iteration #26 with total cluster changes = 1
+Finished Iteration #27 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2296
+Finished Iteration #1 with total cluster changes = 451
+Finished Iteration #2 with total cluster changes = 102
+Finished Iteration #3 with total cluster changes = 2
+Finished Iteration #4 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2296
+Finished Iteration #1 with total cluster changes = 69
+Finished Iteration #2 with total cluster changes = 2
+Finished Iteration #3 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2296
+Finished Iteration #1 with total cluster changes = 19
+Finished Iteration #2 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2201
+Finished Iteration #1 with total cluster changes = 128
+Finished Iteration #2 with total cluster changes = 139
+Finished Iteration #3 with total cluster changes = 83
+Finished Iteration #4 with total cluster changes = 63
+Finished Iteration #5 with total cluster changes = 52
+Finished Iteration #6 with total cluster changes = 38
+Finished Iteration #7 with total cluster changes = 26
+Finished Iteration #8 with total cluster changes = 12
+Finished Iteration #9 with total cluster changes = 9
+Finished Iteration #10 with total cluster changes = 4
+Finished Iteration #11 with total cluster changes = 5
+Finished Iteration #12 with total cluster changes = 4
+Finished Iteration #13 with total cluster changes = 4
+Finished Iteration #14 with total cluster changes = 4
+Finished Iteration #15 with total cluster changes = 2
+Finished Iteration #16 with total cluster changes = 1
+Finished Iteration #17 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2201
+Finished Iteration #1 with total cluster changes = 87
+Finished Iteration #2 with total cluster changes = 87
+Finished Iteration #3 with total cluster changes = 90
+Finished Iteration #4 with total cluster changes = 87
+Finished Iteration #5 with total cluster changes = 76
+Finished Iteration #6 with total cluster changes = 46
+Finished Iteration #7 with total cluster changes = 28
+Finished Iteration #8 with total cluster changes = 17
+Finished Iteration #9 with total cluster changes = 9
+Finished Iteration #10 with total cluster changes = 4
+Finished Iteration #11 with total cluster changes = 3
+Finished Iteration #12 with total cluster changes = 4
+Finished Iteration #13 with total cluster changes = 3
+Finished Iteration #14 with total cluster changes = 3
+Finished Iteration #15 with total cluster changes = 4
+Finished Iteration #16 with total cluster changes = 2
+Finished Iteration #17 with total cluster changes = 2
+Finished Iteration #18 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2201
+Finished Iteration #1 with total cluster changes = 371
+Finished Iteration #2 with total cluster changes = 166
+Finished Iteration #3 with total cluster changes = 94
+Finished Iteration #4 with total cluster changes = 99
+Finished Iteration #5 with total cluster changes = 158
+Finished Iteration #6 with total cluster changes = 165
+Finished Iteration #7 with total cluster changes = 131
+Finished Iteration #8 with total cluster changes = 91
+Finished Iteration #9 with total cluster changes = 39
+Finished Iteration #10 with total cluster changes = 15
+Finished Iteration #11 with total cluster changes = 6
+Finished Iteration #12 with total cluster changes = 3
+Finished Iteration #13 with total cluster changes = 4
+Finished Iteration #14 with total cluster changes = 3
+Finished Iteration #15 with total cluster changes = 3
+Finished Iteration #16 with total cluster changes = 4
+Finished Iteration #17 with total cluster changes = 2
+Finished Iteration #18 with total cluster changes = 2
+Finished Iteration #19 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1667
+Finished Iteration #1 with total cluster changes = 254
+Finished Iteration #2 with total cluster changes = 32
+Finished Iteration #3 with total cluster changes = 27
+Finished Iteration #4 with total cluster changes = 15
+Finished Iteration #5 with total cluster changes = 14
+Finished Iteration #6 with total cluster changes = 14
+Finished Iteration #7 with total cluster changes = 4
+Finished Iteration #8 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1667
+Finished Iteration #1 with total cluster changes = 228
+Finished Iteration #2 with total cluster changes = 346
+Finished Iteration #3 with total cluster changes = 146
+Finished Iteration #4 with total cluster changes = 84
+Finished Iteration #5 with total cluster changes = 57
+Finished Iteration #6 with total cluster changes = 29
+Finished Iteration #7 with total cluster changes = 14
+Finished Iteration #8 with total cluster changes = 13
+Finished Iteration #9 with total cluster changes = 8
+Finished Iteration #10 with total cluster changes = 7
+Finished Iteration #11 with total cluster changes = 3
+Finished Iteration #12 with total cluster changes = 1
+Finished Iteration #13 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1667
+Finished Iteration #1 with total cluster changes = 291
+Finished Iteration #2 with total cluster changes = 99
+Finished Iteration #3 with total cluster changes = 76
+Finished Iteration #4 with total cluster changes = 48
+Finished Iteration #5 with total cluster changes = 22
+Finished Iteration #6 with total cluster changes = 16
+Finished Iteration #7 with total cluster changes = 12
+Finished Iteration #8 with total cluster changes = 6
+Finished Iteration #9 with total cluster changes = 5
+Finished Iteration #10 with total cluster changes = 3
+Finished Iteration #11 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1639
+Finished Iteration #1 with total cluster changes = 257
+Finished Iteration #2 with total cluster changes = 145
+Finished Iteration #3 with total cluster changes = 86
+Finished Iteration #4 with total cluster changes = 30
+Finished Iteration #5 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1639
+Finished Iteration #1 with total cluster changes = 157
+Finished Iteration #2 with total cluster changes = 30
+Finished Iteration #3 with total cluster changes = 1
+Finished Iteration #4 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1639
+Finished Iteration #1 with total cluster changes = 56
+Finished Iteration #2 with total cluster changes = 7
+Finished Iteration #3 with total cluster changes = 0
+====== Done with Trial # 2 / 5, Error Total = 5932829.717346047 ======
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 609
+Finished Iteration #2 with total cluster changes = 178
+Finished Iteration #3 with total cluster changes = 74
+Finished Iteration #4 with total cluster changes = 44
+Finished Iteration #5 with total cluster changes = 27
+Finished Iteration #6 with total cluster changes = 27
+Finished Iteration #7 with total cluster changes = 26
+Finished Iteration #8 with total cluster changes = 20
+Finished Iteration #9 with total cluster changes = 19
+Finished Iteration #10 with total cluster changes = 16
+Finished Iteration #11 with total cluster changes = 23
+Finished Iteration #12 with total cluster changes = 25
+Finished Iteration #13 with total cluster changes = 25
+Finished Iteration #14 with total cluster changes = 28
+Finished Iteration #15 with total cluster changes = 37
+Finished Iteration #16 with total cluster changes = 32
+Finished Iteration #17 with total cluster changes = 30
+Finished Iteration #18 with total cluster changes = 29
+Finished Iteration #19 with total cluster changes = 33
+Finished Iteration #20 with total cluster changes = 27
+Finished Iteration #21 with total cluster changes = 32
+Finished Iteration #22 with total cluster changes = 37
+Finished Iteration #23 with total cluster changes = 38
+Finished Iteration #24 with total cluster changes = 23
+Finished Iteration #25 with total cluster changes = 10
+Finished Iteration #26 with total cluster changes = 8
+Finished Iteration #27 with total cluster changes = 13
+Finished Iteration #28 with total cluster changes = 14
+Finished Iteration #29 with total cluster changes = 17
+Finished Iteration #30 with total cluster changes = 16
+Finished Iteration #31 with total cluster changes = 17
+Finished Iteration #32 with total cluster changes = 18
+Finished Iteration #33 with total cluster changes = 20
+Finished Iteration #34 with total cluster changes = 9
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 658
+Finished Iteration #2 with total cluster changes = 250
+Finished Iteration #3 with total cluster changes = 72
+Finished Iteration #4 with total cluster changes = 29
+Finished Iteration #5 with total cluster changes = 15
+Finished Iteration #6 with total cluster changes = 8
+Finished Iteration #7 with total cluster changes = 3
+Finished Iteration #8 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 802
+Finished Iteration #2 with total cluster changes = 567
+Finished Iteration #3 with total cluster changes = 338
+Finished Iteration #4 with total cluster changes = 100
+Finished Iteration #5 with total cluster changes = 31
+Finished Iteration #6 with total cluster changes = 10
+Finished Iteration #7 with total cluster changes = 3
+Finished Iteration #8 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5660
+Finished Iteration #1 with total cluster changes = 164
+Finished Iteration #2 with total cluster changes = 109
+Finished Iteration #3 with total cluster changes = 80
+Finished Iteration #4 with total cluster changes = 75
+Finished Iteration #5 with total cluster changes = 57
+Finished Iteration #6 with total cluster changes = 48
+Finished Iteration #7 with total cluster changes = 40
+Finished Iteration #8 with total cluster changes = 33
+Finished Iteration #9 with total cluster changes = 31
+Finished Iteration #10 with total cluster changes = 14
+Finished Iteration #11 with total cluster changes = 9
+Finished Iteration #12 with total cluster changes = 5
+Finished Iteration #13 with total cluster changes = 3
+Finished Iteration #14 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5660
+Finished Iteration #1 with total cluster changes = 479
+Finished Iteration #2 with total cluster changes = 319
+Finished Iteration #3 with total cluster changes = 123
+Finished Iteration #4 with total cluster changes = 58
+Finished Iteration #5 with total cluster changes = 30
+Finished Iteration #6 with total cluster changes = 26
+Finished Iteration #7 with total cluster changes = 17
+Finished Iteration #8 with total cluster changes = 13
+Finished Iteration #9 with total cluster changes = 9
+Finished Iteration #10 with total cluster changes = 5
+Finished Iteration #11 with total cluster changes = 3
+Finished Iteration #12 with total cluster changes = 1
+Finished Iteration #13 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5660
+Finished Iteration #1 with total cluster changes = 906
+Finished Iteration #2 with total cluster changes = 352
+Finished Iteration #3 with total cluster changes = 164
+Finished Iteration #4 with total cluster changes = 69
+Finished Iteration #5 with total cluster changes = 36
+Finished Iteration #6 with total cluster changes = 29
+Finished Iteration #7 with total cluster changes = 19
+Finished Iteration #8 with total cluster changes = 13
+Finished Iteration #9 with total cluster changes = 11
+Finished Iteration #10 with total cluster changes = 5
+Finished Iteration #11 with total cluster changes = 3
+Finished Iteration #12 with total cluster changes = 1
+Finished Iteration #13 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5080
+Finished Iteration #1 with total cluster changes = 457
+Finished Iteration #2 with total cluster changes = 189
+Finished Iteration #3 with total cluster changes = 128
+Finished Iteration #4 with total cluster changes = 91
+Finished Iteration #5 with total cluster changes = 69
+Finished Iteration #6 with total cluster changes = 32
+Finished Iteration #7 with total cluster changes = 19
+Finished Iteration #8 with total cluster changes = 12
+Finished Iteration #9 with total cluster changes = 7
+Finished Iteration #10 with total cluster changes = 3
+Finished Iteration #11 with total cluster changes = 3
+Finished Iteration #12 with total cluster changes = 3
+Finished Iteration #13 with total cluster changes = 2
+Finished Iteration #14 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5080
+Finished Iteration #1 with total cluster changes = 409
+Finished Iteration #2 with total cluster changes = 566
+Finished Iteration #3 with total cluster changes = 424
+Finished Iteration #4 with total cluster changes = 271
+Finished Iteration #5 with total cluster changes = 104
+Finished Iteration #6 with total cluster changes = 52
+Finished Iteration #7 with total cluster changes = 29
+Finished Iteration #8 with total cluster changes = 15
+Finished Iteration #9 with total cluster changes = 15
+Finished Iteration #10 with total cluster changes = 9
+Finished Iteration #11 with total cluster changes = 9
+Finished Iteration #12 with total cluster changes = 12
+Finished Iteration #13 with total cluster changes = 6
+Finished Iteration #14 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5080
+Finished Iteration #1 with total cluster changes = 145
+Finished Iteration #2 with total cluster changes = 46
+Finished Iteration #3 with total cluster changes = 18
+Finished Iteration #4 with total cluster changes = 13
+Finished Iteration #5 with total cluster changes = 15
+Finished Iteration #6 with total cluster changes = 12
+Finished Iteration #7 with total cluster changes = 13
+Finished Iteration #8 with total cluster changes = 16
+Finished Iteration #9 with total cluster changes = 16
+Finished Iteration #10 with total cluster changes = 21
+Finished Iteration #11 with total cluster changes = 25
+Finished Iteration #12 with total cluster changes = 22
+Finished Iteration #13 with total cluster changes = 24
+Finished Iteration #14 with total cluster changes = 25
+Finished Iteration #15 with total cluster changes = 23
+Finished Iteration #16 with total cluster changes = 19
+Finished Iteration #17 with total cluster changes = 23
+Finished Iteration #18 with total cluster changes = 22
+Finished Iteration #19 with total cluster changes = 24
+Finished Iteration #20 with total cluster changes = 17
+Finished Iteration #21 with total cluster changes = 17
+Finished Iteration #22 with total cluster changes = 12
+Finished Iteration #23 with total cluster changes = 17
+Finished Iteration #24 with total cluster changes = 18
+Finished Iteration #25 with total cluster changes = 17
+Finished Iteration #26 with total cluster changes = 21
+Finished Iteration #27 with total cluster changes = 21
+Finished Iteration #28 with total cluster changes = 24
+Finished Iteration #29 with total cluster changes = 30
+Finished Iteration #30 with total cluster changes = 31
+Finished Iteration #31 with total cluster changes = 23
+Finished Iteration #32 with total cluster changes = 14
+Finished Iteration #33 with total cluster changes = 15
+Finished Iteration #34 with total cluster changes = 9
+Finished Iteration #0 with total cluster changes = 3184
+Finished Iteration #1 with total cluster changes = 588
+Finished Iteration #2 with total cluster changes = 131
+Finished Iteration #3 with total cluster changes = 64
+Finished Iteration #4 with total cluster changes = 36
+Finished Iteration #5 with total cluster changes = 29
+Finished Iteration #6 with total cluster changes = 19
+Finished Iteration #7 with total cluster changes = 14
+Finished Iteration #8 with total cluster changes = 12
+Finished Iteration #9 with total cluster changes = 7
+Finished Iteration #10 with total cluster changes = 5
+Finished Iteration #11 with total cluster changes = 4
+Finished Iteration #12 with total cluster changes = 3
+Finished Iteration #13 with total cluster changes = 4
+Finished Iteration #14 with total cluster changes = 4
+Finished Iteration #15 with total cluster changes = 3
+Finished Iteration #16 with total cluster changes = 1
+Finished Iteration #17 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3184
+Finished Iteration #1 with total cluster changes = 104
+Finished Iteration #2 with total cluster changes = 48
+Finished Iteration #3 with total cluster changes = 27
+Finished Iteration #4 with total cluster changes = 14
+Finished Iteration #5 with total cluster changes = 9
+Finished Iteration #6 with total cluster changes = 6
+Finished Iteration #7 with total cluster changes = 4
+Finished Iteration #8 with total cluster changes = 1
+Finished Iteration #9 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3184
+Finished Iteration #1 with total cluster changes = 750
+Finished Iteration #2 with total cluster changes = 250
+Finished Iteration #3 with total cluster changes = 208
+Finished Iteration #4 with total cluster changes = 120
+Finished Iteration #5 with total cluster changes = 70
+Finished Iteration #6 with total cluster changes = 50
+Finished Iteration #7 with total cluster changes = 32
+Finished Iteration #8 with total cluster changes = 21
+Finished Iteration #9 with total cluster changes = 13
+Finished Iteration #10 with total cluster changes = 12
+Finished Iteration #11 with total cluster changes = 7
+Finished Iteration #12 with total cluster changes = 5
+Finished Iteration #13 with total cluster changes = 6
+Finished Iteration #14 with total cluster changes = 3
+Finished Iteration #15 with total cluster changes = 4
+Finished Iteration #16 with total cluster changes = 4
+Finished Iteration #17 with total cluster changes = 3
+Finished Iteration #18 with total cluster changes = 1
+Finished Iteration #19 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3391
+Finished Iteration #1 with total cluster changes = 252
+Finished Iteration #2 with total cluster changes = 79
+Finished Iteration #3 with total cluster changes = 25
+Finished Iteration #4 with total cluster changes = 12
+Finished Iteration #5 with total cluster changes = 8
+Finished Iteration #6 with total cluster changes = 4
+Finished Iteration #7 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3391
+Finished Iteration #1 with total cluster changes = 365
+Finished Iteration #2 with total cluster changes = 224
+Finished Iteration #3 with total cluster changes = 146
+Finished Iteration #4 with total cluster changes = 87
+Finished Iteration #5 with total cluster changes = 65
+Finished Iteration #6 with total cluster changes = 31
+Finished Iteration #7 with total cluster changes = 12
+Finished Iteration #8 with total cluster changes = 3
+Finished Iteration #9 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3391
+Finished Iteration #1 with total cluster changes = 439
+Finished Iteration #2 with total cluster changes = 344
+Finished Iteration #3 with total cluster changes = 179
+Finished Iteration #4 with total cluster changes = 74
+Finished Iteration #5 with total cluster changes = 31
+Finished Iteration #6 with total cluster changes = 12
+Finished Iteration #7 with total cluster changes = 2
+Finished Iteration #8 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2269
+Finished Iteration #1 with total cluster changes = 81
+Finished Iteration #2 with total cluster changes = 9
+Finished Iteration #3 with total cluster changes = 1
+Finished Iteration #4 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2269
+Finished Iteration #1 with total cluster changes = 14
+Finished Iteration #2 with total cluster changes = 1
+Finished Iteration #3 with total cluster changes = 1
+Finished Iteration #4 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2269
+Finished Iteration #1 with total cluster changes = 9
+Finished Iteration #2 with total cluster changes = 1
+Finished Iteration #3 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1896
+Finished Iteration #1 with total cluster changes = 380
+Finished Iteration #2 with total cluster changes = 87
+Finished Iteration #3 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1896
+Finished Iteration #1 with total cluster changes = 324
+Finished Iteration #2 with total cluster changes = 357
+Finished Iteration #3 with total cluster changes = 56
+Finished Iteration #4 with total cluster changes = 2
+Finished Iteration #5 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1896
+Finished Iteration #1 with total cluster changes = 26
+Finished Iteration #2 with total cluster changes = 1
+Finished Iteration #3 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1936
+Finished Iteration #1 with total cluster changes = 35
+Finished Iteration #2 with total cluster changes = 3
+Finished Iteration #3 with total cluster changes = 2
+Finished Iteration #4 with total cluster changes = 1
+Finished Iteration #5 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1936
+Finished Iteration #1 with total cluster changes = 65
+Finished Iteration #2 with total cluster changes = 3
+Finished Iteration #3 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1936
+Finished Iteration #1 with total cluster changes = 9
+Finished Iteration #2 with total cluster changes = 2
+Finished Iteration #3 with total cluster changes = 1
+Finished Iteration #4 with total cluster changes = 1
+Finished Iteration #5 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1734
+Finished Iteration #1 with total cluster changes = 110
+Finished Iteration #2 with total cluster changes = 88
+Finished Iteration #3 with total cluster changes = 65
+Finished Iteration #4 with total cluster changes = 37
+Finished Iteration #5 with total cluster changes = 22
+Finished Iteration #6 with total cluster changes = 14
+Finished Iteration #7 with total cluster changes = 7
+Finished Iteration #8 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1734
+Finished Iteration #1 with total cluster changes = 50
+Finished Iteration #2 with total cluster changes = 26
+Finished Iteration #3 with total cluster changes = 15
+Finished Iteration #4 with total cluster changes = 10
+Finished Iteration #5 with total cluster changes = 13
+Finished Iteration #6 with total cluster changes = 14
+Finished Iteration #7 with total cluster changes = 8
+Finished Iteration #8 with total cluster changes = 3
+Finished Iteration #9 with total cluster changes = 2
+Finished Iteration #10 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1734
+Finished Iteration #1 with total cluster changes = 148
+Finished Iteration #2 with total cluster changes = 94
+Finished Iteration #3 with total cluster changes = 53
+Finished Iteration #4 with total cluster changes = 31
+Finished Iteration #5 with total cluster changes = 23
+Finished Iteration #6 with total cluster changes = 15
+Finished Iteration #7 with total cluster changes = 11
+Finished Iteration #8 with total cluster changes = 11
+Finished Iteration #9 with total cluster changes = 11
+Finished Iteration #10 with total cluster changes = 5
+Finished Iteration #11 with total cluster changes = 4
+Finished Iteration #12 with total cluster changes = 0
+====== Done with Trial # 3 / 5, Error Total = 6010560.601361571 ======
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 716
+Finished Iteration #2 with total cluster changes = 442
+Finished Iteration #3 with total cluster changes = 300
+Finished Iteration #4 with total cluster changes = 219
+Finished Iteration #5 with total cluster changes = 186
+Finished Iteration #6 with total cluster changes = 167
+Finished Iteration #7 with total cluster changes = 131
+Finished Iteration #8 with total cluster changes = 101
+Finished Iteration #9 with total cluster changes = 69
+Finished Iteration #10 with total cluster changes = 29
+Finished Iteration #11 with total cluster changes = 11
+Finished Iteration #12 with total cluster changes = 4
+Finished Iteration #13 with total cluster changes = 3
+Finished Iteration #14 with total cluster changes = 2
+Finished Iteration #15 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 312
+Finished Iteration #2 with total cluster changes = 143
+Finished Iteration #3 with total cluster changes = 104
+Finished Iteration #4 with total cluster changes = 103
+Finished Iteration #5 with total cluster changes = 88
+Finished Iteration #6 with total cluster changes = 78
+Finished Iteration #7 with total cluster changes = 74
+Finished Iteration #8 with total cluster changes = 107
+Finished Iteration #9 with total cluster changes = 147
+Finished Iteration #10 with total cluster changes = 189
+Finished Iteration #11 with total cluster changes = 193
+Finished Iteration #12 with total cluster changes = 160
+Finished Iteration #13 with total cluster changes = 158
+Finished Iteration #14 with total cluster changes = 171
+Finished Iteration #15 with total cluster changes = 152
+Finished Iteration #16 with total cluster changes = 173
+Finished Iteration #17 with total cluster changes = 238
+Finished Iteration #18 with total cluster changes = 344
+Finished Iteration #19 with total cluster changes = 486
+Finished Iteration #20 with total cluster changes = 300
+Finished Iteration #21 with total cluster changes = 199
+Finished Iteration #22 with total cluster changes = 169
+Finished Iteration #23 with total cluster changes = 138
+Finished Iteration #24 with total cluster changes = 111
+Finished Iteration #25 with total cluster changes = 77
+Finished Iteration #26 with total cluster changes = 36
+Finished Iteration #27 with total cluster changes = 16
+Finished Iteration #28 with total cluster changes = 4
+Finished Iteration #29 with total cluster changes = 3
+Finished Iteration #30 with total cluster changes = 2
+Finished Iteration #31 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 606
+Finished Iteration #2 with total cluster changes = 230
+Finished Iteration #3 with total cluster changes = 109
+Finished Iteration #4 with total cluster changes = 59
+Finished Iteration #5 with total cluster changes = 23
+Finished Iteration #6 with total cluster changes = 8
+Finished Iteration #7 with total cluster changes = 3
+Finished Iteration #8 with total cluster changes = 3
+Finished Iteration #9 with total cluster changes = 2
+Finished Iteration #10 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5660
+Finished Iteration #1 with total cluster changes = 477
+Finished Iteration #2 with total cluster changes = 215
+Finished Iteration #3 with total cluster changes = 93
+Finished Iteration #4 with total cluster changes = 47
+Finished Iteration #5 with total cluster changes = 31
+Finished Iteration #6 with total cluster changes = 24
+Finished Iteration #7 with total cluster changes = 13
+Finished Iteration #8 with total cluster changes = 13
+Finished Iteration #9 with total cluster changes = 6
+Finished Iteration #10 with total cluster changes = 4
+Finished Iteration #11 with total cluster changes = 3
+Finished Iteration #12 with total cluster changes = 1
+Finished Iteration #13 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5660
+Finished Iteration #1 with total cluster changes = 124
+Finished Iteration #2 with total cluster changes = 56
+Finished Iteration #3 with total cluster changes = 30
+Finished Iteration #4 with total cluster changes = 25
+Finished Iteration #5 with total cluster changes = 17
+Finished Iteration #6 with total cluster changes = 13
+Finished Iteration #7 with total cluster changes = 6
+Finished Iteration #8 with total cluster changes = 5
+Finished Iteration #9 with total cluster changes = 3
+Finished Iteration #10 with total cluster changes = 1
+Finished Iteration #11 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5660
+Finished Iteration #1 with total cluster changes = 141
+Finished Iteration #2 with total cluster changes = 18
+Finished Iteration #3 with total cluster changes = 5
+Finished Iteration #4 with total cluster changes = 4
+Finished Iteration #5 with total cluster changes = 2
+Finished Iteration #6 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5080
+Finished Iteration #1 with total cluster changes = 512
+Finished Iteration #2 with total cluster changes = 293
+Finished Iteration #3 with total cluster changes = 179
+Finished Iteration #4 with total cluster changes = 68
+Finished Iteration #5 with total cluster changes = 19
+Finished Iteration #6 with total cluster changes = 5
+Finished Iteration #7 with total cluster changes = 4
+Finished Iteration #8 with total cluster changes = 3
+Finished Iteration #9 with total cluster changes = 1
+Finished Iteration #10 with total cluster changes = 2
+Finished Iteration #11 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5080
+Finished Iteration #1 with total cluster changes = 91
+Finished Iteration #2 with total cluster changes = 28
+Finished Iteration #3 with total cluster changes = 6
+Finished Iteration #4 with total cluster changes = 4
+Finished Iteration #5 with total cluster changes = 3
+Finished Iteration #6 with total cluster changes = 1
+Finished Iteration #7 with total cluster changes = 2
+Finished Iteration #8 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5080
+Finished Iteration #1 with total cluster changes = 122
+Finished Iteration #2 with total cluster changes = 40
+Finished Iteration #3 with total cluster changes = 14
+Finished Iteration #4 with total cluster changes = 2
+Finished Iteration #5 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3306
+Finished Iteration #1 with total cluster changes = 559
+Finished Iteration #2 with total cluster changes = 41
+Finished Iteration #3 with total cluster changes = 25
+Finished Iteration #4 with total cluster changes = 16
+Finished Iteration #5 with total cluster changes = 14
+Finished Iteration #6 with total cluster changes = 14
+Finished Iteration #7 with total cluster changes = 11
+Finished Iteration #8 with total cluster changes = 7
+Finished Iteration #9 with total cluster changes = 6
+Finished Iteration #10 with total cluster changes = 4
+Finished Iteration #11 with total cluster changes = 2
+Finished Iteration #12 with total cluster changes = 3
+Finished Iteration #13 with total cluster changes = 5
+Finished Iteration #14 with total cluster changes = 1
+Finished Iteration #15 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3306
+Finished Iteration #1 with total cluster changes = 645
+Finished Iteration #2 with total cluster changes = 88
+Finished Iteration #3 with total cluster changes = 41
+Finished Iteration #4 with total cluster changes = 29
+Finished Iteration #5 with total cluster changes = 16
+Finished Iteration #6 with total cluster changes = 14
+Finished Iteration #7 with total cluster changes = 14
+Finished Iteration #8 with total cluster changes = 12
+Finished Iteration #9 with total cluster changes = 7
+Finished Iteration #10 with total cluster changes = 6
+Finished Iteration #11 with total cluster changes = 4
+Finished Iteration #12 with total cluster changes = 2
+Finished Iteration #13 with total cluster changes = 3
+Finished Iteration #14 with total cluster changes = 5
+Finished Iteration #15 with total cluster changes = 1
+Finished Iteration #16 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3306
+Finished Iteration #1 with total cluster changes = 772
+Finished Iteration #2 with total cluster changes = 242
+Finished Iteration #3 with total cluster changes = 131
+Finished Iteration #4 with total cluster changes = 143
+Finished Iteration #5 with total cluster changes = 156
+Finished Iteration #6 with total cluster changes = 118
+Finished Iteration #7 with total cluster changes = 78
+Finished Iteration #8 with total cluster changes = 52
+Finished Iteration #9 with total cluster changes = 44
+Finished Iteration #10 with total cluster changes = 34
+Finished Iteration #11 with total cluster changes = 24
+Finished Iteration #12 with total cluster changes = 15
+Finished Iteration #13 with total cluster changes = 11
+Finished Iteration #14 with total cluster changes = 10
+Finished Iteration #15 with total cluster changes = 8
+Finished Iteration #16 with total cluster changes = 4
+Finished Iteration #17 with total cluster changes = 2
+Finished Iteration #18 with total cluster changes = 2
+Finished Iteration #19 with total cluster changes = 2
+Finished Iteration #20 with total cluster changes = 1
+Finished Iteration #21 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3391
+Finished Iteration #1 with total cluster changes = 70
+Finished Iteration #2 with total cluster changes = 30
+Finished Iteration #3 with total cluster changes = 13
+Finished Iteration #4 with total cluster changes = 1
+Finished Iteration #5 with total cluster changes = 1
+Finished Iteration #6 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3391
+Finished Iteration #1 with total cluster changes = 133
+Finished Iteration #2 with total cluster changes = 61
+Finished Iteration #3 with total cluster changes = 26
+Finished Iteration #4 with total cluster changes = 9
+Finished Iteration #5 with total cluster changes = 1
+Finished Iteration #6 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3391
+Finished Iteration #1 with total cluster changes = 129
+Finished Iteration #2 with total cluster changes = 235
+Finished Iteration #3 with total cluster changes = 367
+Finished Iteration #4 with total cluster changes = 263
+Finished Iteration #5 with total cluster changes = 131
+Finished Iteration #6 with total cluster changes = 44
+Finished Iteration #7 with total cluster changes = 13
+Finished Iteration #8 with total cluster changes = 2
+Finished Iteration #9 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2269
+Finished Iteration #1 with total cluster changes = 24
+Finished Iteration #2 with total cluster changes = 22
+Finished Iteration #3 with total cluster changes = 29
+Finished Iteration #4 with total cluster changes = 30
+Finished Iteration #5 with total cluster changes = 24
+Finished Iteration #6 with total cluster changes = 10
+Finished Iteration #7 with total cluster changes = 2
+Finished Iteration #8 with total cluster changes = 1
+Finished Iteration #9 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2269
+Finished Iteration #1 with total cluster changes = 305
+Finished Iteration #2 with total cluster changes = 194
+Finished Iteration #3 with total cluster changes = 75
+Finished Iteration #4 with total cluster changes = 36
+Finished Iteration #5 with total cluster changes = 15
+Finished Iteration #6 with total cluster changes = 5
+Finished Iteration #7 with total cluster changes = 3
+Finished Iteration #8 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2269
+Finished Iteration #1 with total cluster changes = 236
+Finished Iteration #2 with total cluster changes = 350
+Finished Iteration #3 with total cluster changes = 140
+Finished Iteration #4 with total cluster changes = 46
+Finished Iteration #5 with total cluster changes = 25
+Finished Iteration #6 with total cluster changes = 12
+Finished Iteration #7 with total cluster changes = 10
+Finished Iteration #8 with total cluster changes = 4
+Finished Iteration #9 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2030
+Finished Iteration #1 with total cluster changes = 224
+Finished Iteration #2 with total cluster changes = 25
+Finished Iteration #3 with total cluster changes = 3
+Finished Iteration #4 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2030
+Finished Iteration #1 with total cluster changes = 215
+Finished Iteration #2 with total cluster changes = 45
+Finished Iteration #3 with total cluster changes = 6
+Finished Iteration #4 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2030
+Finished Iteration #1 with total cluster changes = 3
+Finished Iteration #2 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1774
+Finished Iteration #1 with total cluster changes = 255
+Finished Iteration #2 with total cluster changes = 234
+Finished Iteration #3 with total cluster changes = 145
+Finished Iteration #4 with total cluster changes = 115
+Finished Iteration #5 with total cluster changes = 49
+Finished Iteration #6 with total cluster changes = 18
+Finished Iteration #7 with total cluster changes = 2
+Finished Iteration #8 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1774
+Finished Iteration #1 with total cluster changes = 38
+Finished Iteration #2 with total cluster changes = 9
+Finished Iteration #3 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1774
+Finished Iteration #1 with total cluster changes = 269
+Finished Iteration #2 with total cluster changes = 155
+Finished Iteration #3 with total cluster changes = 96
+Finished Iteration #4 with total cluster changes = 80
+Finished Iteration #5 with total cluster changes = 165
+Finished Iteration #6 with total cluster changes = 250
+Finished Iteration #7 with total cluster changes = 242
+Finished Iteration #8 with total cluster changes = 144
+Finished Iteration #9 with total cluster changes = 107
+Finished Iteration #10 with total cluster changes = 39
+Finished Iteration #11 with total cluster changes = 13
+Finished Iteration #12 with total cluster changes = 1
+Finished Iteration #13 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1775
+Finished Iteration #1 with total cluster changes = 109
+Finished Iteration #2 with total cluster changes = 78
+Finished Iteration #3 with total cluster changes = 44
+Finished Iteration #4 with total cluster changes = 24
+Finished Iteration #5 with total cluster changes = 21
+Finished Iteration #6 with total cluster changes = 13
+Finished Iteration #7 with total cluster changes = 9
+Finished Iteration #8 with total cluster changes = 5
+Finished Iteration #9 with total cluster changes = 6
+Finished Iteration #10 with total cluster changes = 3
+Finished Iteration #11 with total cluster changes = 4
+Finished Iteration #12 with total cluster changes = 1
+Finished Iteration #13 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1775
+Finished Iteration #1 with total cluster changes = 50
+Finished Iteration #2 with total cluster changes = 23
+Finished Iteration #3 with total cluster changes = 24
+Finished Iteration #4 with total cluster changes = 17
+Finished Iteration #5 with total cluster changes = 15
+Finished Iteration #6 with total cluster changes = 1
+Finished Iteration #7 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1775
+Finished Iteration #1 with total cluster changes = 112
+Finished Iteration #2 with total cluster changes = 28
+Finished Iteration #3 with total cluster changes = 18
+Finished Iteration #4 with total cluster changes = 14
+Finished Iteration #5 with total cluster changes = 1
+Finished Iteration #6 with total cluster changes = 0
+====== Done with Trial # 4 / 5, Error Total = 6037149.737649338 ======
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 553
+Finished Iteration #2 with total cluster changes = 403
+Finished Iteration #3 with total cluster changes = 198
+Finished Iteration #4 with total cluster changes = 136
+Finished Iteration #5 with total cluster changes = 103
+Finished Iteration #6 with total cluster changes = 65
+Finished Iteration #7 with total cluster changes = 27
+Finished Iteration #8 with total cluster changes = 11
+Finished Iteration #9 with total cluster changes = 4
+Finished Iteration #10 with total cluster changes = 3
+Finished Iteration #11 with total cluster changes = 2
+Finished Iteration #12 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 748
+Finished Iteration #2 with total cluster changes = 372
+Finished Iteration #3 with total cluster changes = 131
+Finished Iteration #4 with total cluster changes = 50
+Finished Iteration #5 with total cluster changes = 20
+Finished Iteration #6 with total cluster changes = 5
+Finished Iteration #7 with total cluster changes = 3
+Finished Iteration #8 with total cluster changes = 2
+Finished Iteration #9 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 10740
+Finished Iteration #1 with total cluster changes = 1954
+Finished Iteration #2 with total cluster changes = 1323
+Finished Iteration #3 with total cluster changes = 467
+Finished Iteration #4 with total cluster changes = 150
+Finished Iteration #5 with total cluster changes = 53
+Finished Iteration #6 with total cluster changes = 18
+Finished Iteration #7 with total cluster changes = 4
+Finished Iteration #8 with total cluster changes = 2
+Finished Iteration #9 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5453
+Finished Iteration #1 with total cluster changes = 90
+Finished Iteration #2 with total cluster changes = 62
+Finished Iteration #3 with total cluster changes = 89
+Finished Iteration #4 with total cluster changes = 68
+Finished Iteration #5 with total cluster changes = 70
+Finished Iteration #6 with total cluster changes = 74
+Finished Iteration #7 with total cluster changes = 52
+Finished Iteration #8 with total cluster changes = 51
+Finished Iteration #9 with total cluster changes = 22
+Finished Iteration #10 with total cluster changes = 18
+Finished Iteration #11 with total cluster changes = 11
+Finished Iteration #12 with total cluster changes = 9
+Finished Iteration #13 with total cluster changes = 8
+Finished Iteration #14 with total cluster changes = 6
+Finished Iteration #15 with total cluster changes = 2
+Finished Iteration #16 with total cluster changes = 2
+Finished Iteration #17 with total cluster changes = 1
+Finished Iteration #18 with total cluster changes = 1
+Finished Iteration #19 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5453
+Finished Iteration #1 with total cluster changes = 1069
+Finished Iteration #2 with total cluster changes = 282
+Finished Iteration #3 with total cluster changes = 108
+Finished Iteration #4 with total cluster changes = 63
+Finished Iteration #5 with total cluster changes = 43
+Finished Iteration #6 with total cluster changes = 24
+Finished Iteration #7 with total cluster changes = 20
+Finished Iteration #8 with total cluster changes = 14
+Finished Iteration #9 with total cluster changes = 10
+Finished Iteration #10 with total cluster changes = 8
+Finished Iteration #11 with total cluster changes = 6
+Finished Iteration #12 with total cluster changes = 2
+Finished Iteration #13 with total cluster changes = 2
+Finished Iteration #14 with total cluster changes = 1
+Finished Iteration #15 with total cluster changes = 1
+Finished Iteration #16 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5453
+Finished Iteration #1 with total cluster changes = 775
+Finished Iteration #2 with total cluster changes = 427
+Finished Iteration #3 with total cluster changes = 272
+Finished Iteration #4 with total cluster changes = 183
+Finished Iteration #5 with total cluster changes = 120
+Finished Iteration #6 with total cluster changes = 93
+Finished Iteration #7 with total cluster changes = 80
+Finished Iteration #8 with total cluster changes = 77
+Finished Iteration #9 with total cluster changes = 74
+Finished Iteration #10 with total cluster changes = 64
+Finished Iteration #11 with total cluster changes = 84
+Finished Iteration #12 with total cluster changes = 66
+Finished Iteration #13 with total cluster changes = 71
+Finished Iteration #14 with total cluster changes = 73
+Finished Iteration #15 with total cluster changes = 52
+Finished Iteration #16 with total cluster changes = 51
+Finished Iteration #17 with total cluster changes = 22
+Finished Iteration #18 with total cluster changes = 18
+Finished Iteration #19 with total cluster changes = 11
+Finished Iteration #20 with total cluster changes = 9
+Finished Iteration #21 with total cluster changes = 8
+Finished Iteration #22 with total cluster changes = 6
+Finished Iteration #23 with total cluster changes = 2
+Finished Iteration #24 with total cluster changes = 2
+Finished Iteration #25 with total cluster changes = 1
+Finished Iteration #26 with total cluster changes = 1
+Finished Iteration #27 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5287
+Finished Iteration #1 with total cluster changes = 415
+Finished Iteration #2 with total cluster changes = 253
+Finished Iteration #3 with total cluster changes = 139
+Finished Iteration #4 with total cluster changes = 55
+Finished Iteration #5 with total cluster changes = 28
+Finished Iteration #6 with total cluster changes = 13
+Finished Iteration #7 with total cluster changes = 2
+Finished Iteration #8 with total cluster changes = 2
+Finished Iteration #9 with total cluster changes = 2
+Finished Iteration #10 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5287
+Finished Iteration #1 with total cluster changes = 509
+Finished Iteration #2 with total cluster changes = 378
+Finished Iteration #3 with total cluster changes = 202
+Finished Iteration #4 with total cluster changes = 85
+Finished Iteration #5 with total cluster changes = 34
+Finished Iteration #6 with total cluster changes = 17
+Finished Iteration #7 with total cluster changes = 12
+Finished Iteration #8 with total cluster changes = 3
+Finished Iteration #9 with total cluster changes = 3
+Finished Iteration #10 with total cluster changes = 1
+Finished Iteration #11 with total cluster changes = 1
+Finished Iteration #12 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 5287
+Finished Iteration #1 with total cluster changes = 1007
+Finished Iteration #2 with total cluster changes = 434
+Finished Iteration #3 with total cluster changes = 261
+Finished Iteration #4 with total cluster changes = 144
+Finished Iteration #5 with total cluster changes = 55
+Finished Iteration #6 with total cluster changes = 28
+Finished Iteration #7 with total cluster changes = 13
+Finished Iteration #8 with total cluster changes = 2
+Finished Iteration #9 with total cluster changes = 2
+Finished Iteration #10 with total cluster changes = 2
+Finished Iteration #11 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3786
+Finished Iteration #1 with total cluster changes = 190
+Finished Iteration #2 with total cluster changes = 170
+Finished Iteration #3 with total cluster changes = 123
+Finished Iteration #4 with total cluster changes = 62
+Finished Iteration #5 with total cluster changes = 31
+Finished Iteration #6 with total cluster changes = 14
+Finished Iteration #7 with total cluster changes = 8
+Finished Iteration #8 with total cluster changes = 6
+Finished Iteration #9 with total cluster changes = 3
+Finished Iteration #10 with total cluster changes = 3
+Finished Iteration #11 with total cluster changes = 1
+Finished Iteration #12 with total cluster changes = 1
+Finished Iteration #13 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3786
+Finished Iteration #1 with total cluster changes = 265
+Finished Iteration #2 with total cluster changes = 119
+Finished Iteration #3 with total cluster changes = 64
+Finished Iteration #4 with total cluster changes = 43
+Finished Iteration #5 with total cluster changes = 41
+Finished Iteration #6 with total cluster changes = 49
+Finished Iteration #7 with total cluster changes = 57
+Finished Iteration #8 with total cluster changes = 45
+Finished Iteration #9 with total cluster changes = 25
+Finished Iteration #10 with total cluster changes = 8
+Finished Iteration #11 with total cluster changes = 3
+Finished Iteration #12 with total cluster changes = 4
+Finished Iteration #13 with total cluster changes = 1
+Finished Iteration #14 with total cluster changes = 1
+Finished Iteration #15 with total cluster changes = 1
+Finished Iteration #16 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 3786
+Finished Iteration #1 with total cluster changes = 301
+Finished Iteration #2 with total cluster changes = 162
+Finished Iteration #3 with total cluster changes = 64
+Finished Iteration #4 with total cluster changes = 17
+Finished Iteration #5 with total cluster changes = 10
+Finished Iteration #6 with total cluster changes = 7
+Finished Iteration #7 with total cluster changes = 3
+Finished Iteration #8 with total cluster changes = 3
+Finished Iteration #9 with total cluster changes = 3
+Finished Iteration #10 with total cluster changes = 1
+Finished Iteration #11 with total cluster changes = 1
+Finished Iteration #12 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2991
+Finished Iteration #1 with total cluster changes = 256
+Finished Iteration #2 with total cluster changes = 271
+Finished Iteration #3 with total cluster changes = 209
+Finished Iteration #4 with total cluster changes = 43
+Finished Iteration #5 with total cluster changes = 4
+Finished Iteration #6 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2991
+Finished Iteration #1 with total cluster changes = 87
+Finished Iteration #2 with total cluster changes = 27
+Finished Iteration #3 with total cluster changes = 16
+Finished Iteration #4 with total cluster changes = 7
+Finished Iteration #5 with total cluster changes = 8
+Finished Iteration #6 with total cluster changes = 10
+Finished Iteration #7 with total cluster changes = 3
+Finished Iteration #8 with total cluster changes = 2
+Finished Iteration #9 with total cluster changes = 3
+Finished Iteration #10 with total cluster changes = 3
+Finished Iteration #11 with total cluster changes = 1
+Finished Iteration #12 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2991
+Finished Iteration #1 with total cluster changes = 51
+Finished Iteration #2 with total cluster changes = 19
+Finished Iteration #3 with total cluster changes = 10
+Finished Iteration #4 with total cluster changes = 3
+Finished Iteration #5 with total cluster changes = 3
+Finished Iteration #6 with total cluster changes = 1
+Finished Iteration #7 with total cluster changes = 2
+Finished Iteration #8 with total cluster changes = 3
+Finished Iteration #9 with total cluster changes = 3
+Finished Iteration #10 with total cluster changes = 1
+Finished Iteration #11 with total cluster changes = 1
+Finished Iteration #12 with total cluster changes = 1
+Finished Iteration #13 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2296
+Finished Iteration #1 with total cluster changes = 49
+Finished Iteration #2 with total cluster changes = 2
+Finished Iteration #3 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2296
+Finished Iteration #1 with total cluster changes = 86
+Finished Iteration #2 with total cluster changes = 297
+Finished Iteration #3 with total cluster changes = 561
+Finished Iteration #4 with total cluster changes = 181
+Finished Iteration #5 with total cluster changes = 6
+Finished Iteration #6 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2296
+Finished Iteration #1 with total cluster changes = 583
+Finished Iteration #2 with total cluster changes = 417
+Finished Iteration #3 with total cluster changes = 134
+Finished Iteration #4 with total cluster changes = 1
+Finished Iteration #5 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2201
+Finished Iteration #1 with total cluster changes = 153
+Finished Iteration #2 with total cluster changes = 63
+Finished Iteration #3 with total cluster changes = 24
+Finished Iteration #4 with total cluster changes = 5
+Finished Iteration #5 with total cluster changes = 2
+Finished Iteration #6 with total cluster changes = 1
+Finished Iteration #7 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2201
+Finished Iteration #1 with total cluster changes = 116
+Finished Iteration #2 with total cluster changes = 72
+Finished Iteration #3 with total cluster changes = 62
+Finished Iteration #4 with total cluster changes = 50
+Finished Iteration #5 with total cluster changes = 33
+Finished Iteration #6 with total cluster changes = 20
+Finished Iteration #7 with total cluster changes = 12
+Finished Iteration #8 with total cluster changes = 9
+Finished Iteration #9 with total cluster changes = 4
+Finished Iteration #10 with total cluster changes = 5
+Finished Iteration #11 with total cluster changes = 4
+Finished Iteration #12 with total cluster changes = 4
+Finished Iteration #13 with total cluster changes = 4
+Finished Iteration #14 with total cluster changes = 2
+Finished Iteration #15 with total cluster changes = 1
+Finished Iteration #16 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 2201
+Finished Iteration #1 with total cluster changes = 285
+Finished Iteration #2 with total cluster changes = 168
+Finished Iteration #3 with total cluster changes = 139
+Finished Iteration #4 with total cluster changes = 151
+Finished Iteration #5 with total cluster changes = 167
+Finished Iteration #6 with total cluster changes = 133
+Finished Iteration #7 with total cluster changes = 83
+Finished Iteration #8 with total cluster changes = 35
+Finished Iteration #9 with total cluster changes = 14
+Finished Iteration #10 with total cluster changes = 6
+Finished Iteration #11 with total cluster changes = 3
+Finished Iteration #12 with total cluster changes = 4
+Finished Iteration #13 with total cluster changes = 3
+Finished Iteration #14 with total cluster changes = 3
+Finished Iteration #15 with total cluster changes = 4
+Finished Iteration #16 with total cluster changes = 2
+Finished Iteration #17 with total cluster changes = 2
+Finished Iteration #18 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1667
+Finished Iteration #1 with total cluster changes = 30
+Finished Iteration #2 with total cluster changes = 26
+Finished Iteration #3 with total cluster changes = 17
+Finished Iteration #4 with total cluster changes = 15
+Finished Iteration #5 with total cluster changes = 12
+Finished Iteration #6 with total cluster changes = 2
+Finished Iteration #7 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1667
+Finished Iteration #1 with total cluster changes = 304
+Finished Iteration #2 with total cluster changes = 45
+Finished Iteration #3 with total cluster changes = 30
+Finished Iteration #4 with total cluster changes = 15
+Finished Iteration #5 with total cluster changes = 14
+Finished Iteration #6 with total cluster changes = 14
+Finished Iteration #7 with total cluster changes = 4
+Finished Iteration #8 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1667
+Finished Iteration #1 with total cluster changes = 75
+Finished Iteration #2 with total cluster changes = 21
+Finished Iteration #3 with total cluster changes = 13
+Finished Iteration #4 with total cluster changes = 3
+Finished Iteration #5 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1620
+Finished Iteration #1 with total cluster changes = 155
+Finished Iteration #2 with total cluster changes = 52
+Finished Iteration #3 with total cluster changes = 27
+Finished Iteration #4 with total cluster changes = 8
+Finished Iteration #5 with total cluster changes = 1
+Finished Iteration #6 with total cluster changes = 1
+Finished Iteration #7 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1620
+Finished Iteration #1 with total cluster changes = 35
+Finished Iteration #2 with total cluster changes = 7
+Finished Iteration #3 with total cluster changes = 1
+Finished Iteration #4 with total cluster changes = 1
+Finished Iteration #5 with total cluster changes = 0
+Finished Iteration #0 with total cluster changes = 1620
+Finished Iteration #1 with total cluster changes = 21
+Finished Iteration #2 with total cluster changes = 1
+Finished Iteration #3 with total cluster changes = 0
+====== Done with Trial # 5 / 5, Error Total = 5605174.12387098 ======
+Finished K-Means with t-SNE, P=. Best Error Total = 5605174.12387098
+Finished creating output file. Path is: resources\output\prediction_waustin_2020-04-15-18-17-51.txt
+
+
+
+===============================================================
+Investigating Impact of Number of Components and Learning Rate!
+===============================================================
+Got X, y. Shapes are: (1000, 784), and (1000,)
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 150, no downsampling, and dims = 2
+Result for trial #1 is: 0.6017928539180257
+Result for trial #2 is: 0.6071779921045753
+Result for trial #3 is: 0.5821488499571408
+Result for trial #4 is: 0.5986672118946407
+Result for trial #5 is: 0.5985854547785148
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 200, no downsampling, and dims = 2
+Result for trial #1 is: 0.5952216182404052
+Result for trial #2 is: 0.5981102637728044
+Result for trial #3 is: 0.5896677710580872
+Result for trial #4 is: 0.5941182796241735
+Result for trial #5 is: 0.5929552853329254
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 260, no downsampling, and dims = 2
+Result for trial #1 is: 0.5450442755526113
+Result for trial #2 is: 0.6083522002100907
+Result for trial #3 is: 0.6035151409904296
+Result for trial #4 is: 0.5416002877808644
+Result for trial #5 is: 0.5719370890347707
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 330, no downsampling, and dims = 2
+Result for trial #1 is: 0.5517378403612095
+Result for trial #2 is: 0.600786076085721
+Result for trial #3 is: 0.5709979366833768
+Result for trial #4 is: 0.566210599482138
+Result for trial #5 is: 0.583679332667804
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 410, no downsampling, and dims = 2
+Result for trial #1 is: 0.5140863101930093
+Result for trial #2 is: 0.5119886604361682
+Result for trial #3 is: 0.5620107344906438
+Result for trial #4 is: 0.5719011469442296
+Result for trial #5 is: 0.5947508876110494
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 500, no downsampling, and dims = 2
+Result for trial #1 is: 0.5853146544130187
+Result for trial #2 is: 0.5767111454550766
+Result for trial #3 is: 0.548198974954633
+Result for trial #4 is: 0.5732151454524418
+Result for trial #5 is: 0.5483246892493551
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 600, no downsampling, and dims = 2
+Result for trial #1 is: 0.5759984869899304
+Result for trial #2 is: 0.5759984869899304
+Result for trial #3 is: 0.5759984869899307
+Result for trial #4 is: 0.6085101979919432
+Result for trial #5 is: 0.5974942559803289
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 150, no downsampling, and dims = 3
+Result for trial #1 is: 0.5940463210457692
+Result for trial #2 is: 0.5325213588807262
+Result for trial #3 is: 0.5915592086379652
+Result for trial #4 is: 0.5393698563556236
+Result for trial #5 is: 0.6192440333440093
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 200, no downsampling, and dims = 3
+Result for trial #1 is: 0.5760271654343934
+Result for trial #2 is: 0.5678567479609912
+Result for trial #3 is: 0.5655066491575004
+Result for trial #4 is: 0.5654233993950516
+Result for trial #5 is: 0.562615958909803
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 260, no downsampling, and dims = 3
+Result for trial #1 is: 0.5280809629647316
+Result for trial #2 is: 0.5870267139455093
+Result for trial #3 is: 0.5799706993337815
+Result for trial #4 is: 0.5834448679288181
+Result for trial #5 is: 0.5996719942972687
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 330, no downsampling, and dims = 3
+Result for trial #1 is: 0.46744927725175056
+Result for trial #2 is: 0.46282878872448047
+Result for trial #3 is: 0.4838548099300622
+Result for trial #4 is: 0.4784865162267849
+Result for trial #5 is: 0.46797801166625075
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 410, no downsampling, and dims = 3
+Result for trial #1 is: 0.3733199705557292
+Result for trial #2 is: 0.3809158376596594
+Result for trial #3 is: 0.3710761210066353
+Result for trial #4 is: 0.35358672374187944
+Result for trial #5 is: 0.36368697457666793
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 500, no downsampling, and dims = 3
+Result for trial #1 is: 0.3099197110657693
+Result for trial #2 is: 0.33071789211007296
+Result for trial #3 is: 0.3248563433015788
+Result for trial #4 is: 0.3222806752725452
+Result for trial #5 is: 0.3257984253200549
+Finished TSNE for chart: t-SNE Output with P = 31, LR = 600, no downsampling, and dims = 3
+Result for trial #1 is: 0.28503856094617114
+Result for trial #2 is: 0.27485626148634257
+Result for trial #3 is: 0.2897644403203104
+Result for trial #4 is: 0.3086489437977287
+Result for trial #5 is: 0.29445915915094395
+
+
+Graph data:
+
+Shape of Digits file  = (10740, 784)
+Starting t-SNE.
+Finished t-SNE, and got X_new. Shape = (10740, 2)
+====== Done with Trial # 1 / 5 for K = 2, Error Total = 14598614.369697548 ======
+====== Done with Trial # 2 / 5 for K = 2, Error Total = 13805716.248096155 ======
+====== Done with Trial # 3 / 5 for K = 2, Error Total = 13845051.817797925 ======
+====== Done with Trial # 4 / 5 for K = 2, Error Total = 13805716.248096155 ======
+====== Done with Trial # 5 / 5 for K = 2, Error Total = 13805716.248096155 ======
+====== Done with Trial # 1 / 5 for K = 4, Error Total = 5504566.770055167 ======
+====== Done with Trial # 2 / 5 for K = 4, Error Total = 5485693.269078486 ======
+====== Done with Trial # 3 / 5 for K = 4, Error Total = 5504528.789017042 ======
+====== Done with Trial # 4 / 5 for K = 4, Error Total = 5485693.269078486 ======
+====== Done with Trial # 5 / 5 for K = 4, Error Total = 5504566.770055167 ======
+====== Done with Trial # 1 / 5 for K = 6, Error Total = 3567968.7516922792 ======
+====== Done with Trial # 2 / 5 for K = 6, Error Total = 3601807.9512741817 ======
+====== Done with Trial # 3 / 5 for K = 6, Error Total = 3637127.8990718247 ======
+====== Done with Trial # 4 / 5 for K = 6, Error Total = 3053692.6422403227 ======
+====== Done with Trial # 5 / 5 for K = 6, Error Total = 3637146.752484159 ======
+====== Done with Trial # 1 / 5 for K = 8, Error Total = 2367712.7367747887 ======
+====== Done with Trial # 2 / 5 for K = 8, Error Total = 2366359.111737933 ======
+====== Done with Trial # 3 / 5 for K = 8, Error Total = 2032066.254211202 ======
+====== Done with Trial # 4 / 5 for K = 8, Error Total = 2032213.7746604378 ======
+====== Done with Trial # 5 / 5 for K = 8, Error Total = 2032066.1834897846 ======
+====== Done with Trial # 1 / 5 for K = 10, Error Total = 1590599.6230791379 ======
+====== Done with Trial # 2 / 5 for K = 10, Error Total = 1783785.7984791955 ======
+====== Done with Trial # 3 / 5 for K = 10, Error Total = 1788996.8591516402 ======
+====== Done with Trial # 4 / 5 for K = 10, Error Total = 1757857.9927978572 ======
+====== Done with Trial # 5 / 5 for K = 10, Error Total = 1611803.2035660846 ======
+====== Done with Trial # 1 / 5 for K = 12, Error Total = 1347711.3016939696 ======
+====== Done with Trial # 2 / 5 for K = 12, Error Total = 1278887.1341891827 ======
+====== Done with Trial # 3 / 5 for K = 12, Error Total = 1258348.3772366624 ======
+====== Done with Trial # 4 / 5 for K = 12, Error Total = 1261416.303388858 ======
+====== Done with Trial # 5 / 5 for K = 12, Error Total = 1347081.9991947943 ======
+====== Done with Trial # 1 / 5 for K = 14, Error Total = 1052036.54182977 ======
+====== Done with Trial # 2 / 5 for K = 14, Error Total = 1105415.27977294 ======
+====== Done with Trial # 3 / 5 for K = 14, Error Total = 1167599.9955580104 ======
+====== Done with Trial # 4 / 5 for K = 14, Error Total = 1174388.167585247 ======
+====== Done with Trial # 5 / 5 for K = 14, Error Total = 1086230.3812608893 ======
+====== Done with Trial # 1 / 5 for K = 16, Error Total = 889615.1326438921 ======
+====== Done with Trial # 2 / 5 for K = 16, Error Total = 1155489.4909945372 ======
+====== Done with Trial # 3 / 5 for K = 16, Error Total = 1030479.3762780337 ======
+====== Done with Trial # 4 / 5 for K = 16, Error Total = 1148794.1011759737 ======
+====== Done with Trial # 5 / 5 for K = 16, Error Total = 947761.3160967546 ======
+====== Done with Trial # 1 / 5 for K = 18, Error Total = 810155.6279130268 ======
+====== Done with Trial # 2 / 5 for K = 18, Error Total = 797236.8952344926 ======
+====== Done with Trial # 3 / 5 for K = 18, Error Total = 828411.8775781794 ======
+====== Done with Trial # 4 / 5 for K = 18, Error Total = 879690.564559197 ======
+====== Done with Trial # 5 / 5 for K = 18, Error Total = 862982.6504434178 ======
+====== Done with Trial # 1 / 5 for K = 20, Error Total = 743722.1737946022 ======
+====== Done with Trial # 2 / 5 for K = 20, Error Total = 734428.0955103613 ======
+====== Done with Trial # 3 / 5 for K = 20, Error Total = 784182.6382450755 ======
+====== Done with Trial # 4 / 5 for K = 20, Error Total = 778608.8795878072 ======
+====== Done with Trial # 5 / 5 for K = 20, Error Total = 763745.14514363 ======
+Done with K-Means.
+For K = 2     Error is:      13972162.986356786
+For K = 4     Error is:      5497009.77345687
+For K = 6     Error is:      3499548.7993525537
+For K = 8     Error is:      2166083.6121748295
+For K = 10     Error is:      1706608.695414783
+For K = 12     Error is:      1298689.0231406935
+For K = 14     Error is:      1117134.0732013714
+For K = 16     Error is:      1034427.8834378384
+For K = 18     Error is:      835695.5231456629
+For K = 20     Error is:      760937.3864562951
+
+
+
+Comparing Basic and Bisecting
+
+Done with Basic K-Means Trial # 1 / 5
+Error Total = 4717.508240397649
+Done with Basic K-Means Trial # 2 / 5
+Error Total = 4717.054677624764
+Done with Basic K-Means Trial # 3 / 5
+Error Total = 2662.0679444928155
+Done with Basic K-Means Trial # 4 / 5
+Error Total = 2655.8335392377794
+Done with Basic K-Means Trial # 5 / 5
+Error Total = 2662.0679444928155
+Finished Basic K-Means. Avg Error = 3482.906469249165 and Best Error = 2655.8335392377794
+Creating output now for Basic K-Means.
+Finished creating output file. Path is: resources\output\prediction_waustin_2020-04-16-21-24-25.txt
+Done with Bisecting K-Means Trial # 1 / 5
+Error Total = 2655.8335392377794
+Done with Bisecting K-Means Trial # 2 / 5
+Error Total = 2655.8335392377794
+Done with Bisecting K-Means Trial # 3 / 5
+Error Total = 2658.161300540577
+Done with Bisecting K-Means Trial # 4 / 5
+Error Total = 2655.8335392377794
+Done with Bisecting K-Means Trial # 5 / 5
+Error Total = 2655.8335392377794
+Finished Bisecting K-Means. Avg Error = 2656.299091498339 and Best Error = 2655.8335392377794
+Creating output now for Bisecting K-Means.
+Finished creating output file. Path is: resources\output\prediction_waustin_2020-04-16-21-24-26.txt
+
+
+
+
+
+Comparing Initialization Types
+
+Done with Basic K-Means with initialization type = Sampling, Trial # 1 / 5
+Error Total = 140.9658166307471
+Done with Basic K-Means with initialization type = Sampling, Trial # 2 / 5
+Error Total = 142.110637131042
+Done with Basic K-Means with initialization type = Sampling, Trial # 3 / 5
+Error Total = 142.110637131042
+Done with Basic K-Means with initialization type = Sampling, Trial # 4 / 5
+Error Total = 197.70140330429493
+Done with Basic K-Means with initialization type = Sampling, Trial # 5 / 5
+Error Total = 141.15417813388666
+Finished Basic K-Means with initialization type = Sampling. Avg Error = 152.80853446620253 and Best Error = 140.9658166307471
+Done with Basic K-Means with initialization type = Random, Trial # 1 / 5
+Error Total = 142.110637131042
+Done with Basic K-Means with initialization type = Random, Trial # 2 / 5
+Error Total = 142.110637131042
+Done with Basic K-Means with initialization type = Random, Trial # 3 / 5
+Error Total = 142.110637131042
+Done with Basic K-Means with initialization type = Random, Trial # 4 / 5
+Error Total = 142.110637131042
+Done with Basic K-Means with initialization type = Random, Trial # 5 / 5
+Error Total = 142.110637131042
+Finished Basic K-Means with initialization type = Random. Avg Error = 142.110637131042 and Best Error = 142.110637131042
+Done with Basic K-Means with initialization type = K-Means++, Trial # 1 / 5
+Error Total = 142.110637131042
+Done with Basic K-Means with initialization type = K-Means++, Trial # 2 / 5
+Error Total = 141.22088728366822
+Done with Basic K-Means with initialization type = K-Means++, Trial # 3 / 5
+Error Total = 141.15417813388666
+Done with Basic K-Means with initialization type = K-Means++, Trial # 4 / 5
+Error Total = 140.9658166307471
+Done with Basic K-Means with initialization type = K-Means++, Trial # 5 / 5
+Error Total = 142.110637131042
+Finished Basic K-Means with initialization type = K-Means++. Avg Error = 141.5124312620772 and Best Error = 140.9658166307471
