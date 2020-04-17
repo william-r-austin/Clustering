@@ -79,7 +79,6 @@ def computeClusterErrorMap(X, clusterAssignments, clusterCenters, distanceFuncti
         func = np.vectorize(lambda t: t == clusterLabel)
         indices = func(clusterAssignments)
         clusterPoints = X[indices, :]
-        
         squaredErrorFunc = lambda t: distanceFunction(t, clusterCenter) ** 2
         sseArray = np.apply_along_axis(squaredErrorFunc, axis=1, arr=clusterPoints)
         totalClusterSSE = np.sum(a=sseArray, axis=0, dtype=np.float64)

@@ -12,7 +12,6 @@ import cs584.project3.kmeans_init as kminit
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 import math
-from sklearn.metrics import v_measure_score
 
 import matplotlib.pyplot as plt
 
@@ -168,14 +167,7 @@ def tuneParametersMNIST2():
             X_transformed = tsne.fit_transform(X)
             print("Finished TSNE for chart: " + chartTitle)
             
-            for z in range(5):
-                model = kmclustering.BasicKMeansClusteringModel(distanceFunc, centerFunc, 100)
-                #initFunc = lambda q, z: kminit.initKMeansSampling(q, z)
-                #assignments, centers = kminit.initKMeansSampling(X_normalized, clusterLabels, distanceFunc)
-                model.runBasicKMeansClustering(X_transformed, clusterLabels, kminit.initKMeansSampling)
-                
-                vScore = v_measure_score(y, model.finalClusterAssignments)
-                print("V-measure score for trial #" + str(z+1) + " is: " + str(vScore))
+
             
             #model = kmclustering.BasicKMeansClusteringModel(distanceFunc, centerFunc, 100)
             #initFunc = lambda q, z: kminit.initKMeansSampling(q, z)
@@ -274,3 +266,39 @@ def submission01(createOutput, numTrials):
     #print("Best Assignments = " + str(bestAssignments))
     if createOutput:
         common.writeResultsFile(bestAssignments)
+
+def chartClusterErrorVsClusterCount():
+    X = common.readDigitsFile()
+    X = X / 255.0 
+    print("Shape of Digits file  = " + str(X.shape))
+    print("Starting t-SNE.")
+    tsne = TSNE(n_components=2, init='random', random_state=0, perplexity=100, learning_rate=400, n_iter=2000)
+    X_new = tsne.fit_transform(X)
+    print("Finished t-SNE, and got X_new. Shape = " + str(X_new.shape))
+
+    distanceFunc = common.euclideanDistanceFunction
+    centerFunc = common.digitsDataCenterFunction
+    numTrials = 5
+    errorMapForClusterSize = {}
+    clusterSizeList = list(range(2, 21, 2))
+    
+    for clusterSize in clusterSizeList:
+        errorSum = 0
+        clusterLabels = np.array(list(range(1, clusterSize + 1)), dtype=np.int8)
+        
+        for z in range(numTrials):
+            model = kmclustering.BasicKMeansClusteringModel(distanceFunc, centerFunc, 100)
+            model.runBasicKMeansClustering(X_new, clusterLabels, kminit.initKMeansSampling)
+            
+            print("====== Done with Trial # " + str(z + 1) + " / " + str(numTrials) + " for K = " + str(clusterSize) + \
+                  ", Error Total = " + str(model.finalClusterErrorTotal) + " ======")
+            
+            errorSum += model.finalClusterErrorTotal
+        
+        avgError = errorSum / numTrials
+        errorMapForClusterSize[clusterSize] = avgError
+    
+    print("Done with K-Means.")
+    
+    for clusterSize in clusterSizeList:
+        print("For K = " + str(clusterSize) + "     Error is:      " + str(errorMapForClusterSize[clusterSize]))

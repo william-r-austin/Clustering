@@ -89,6 +89,12 @@ def readIrisFileAsList():
     
     return irisData
 
+def testConversion():
+    x = np.array([2, 3, 4], dtype=np.uint8)
+    print("X = " + str(x) + " dtype = " + str(x.dtype))
+    x = x / 13.0
+    print("X = " + str(x) + " dtype = " + str(x.dtype))
+
 def readDigitsFile():
     relativePath = constants.HANDWRITTEN_DIGITS_FILE
     digitsData = np.ndarray(shape=(10740, 784), dtype=np.uint8)

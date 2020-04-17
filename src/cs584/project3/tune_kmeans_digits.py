@@ -4,6 +4,7 @@ Created on Apr 13, 2020
 @author: William
 '''
 import cs584.project3.kmeans_digits as kmdigits
+import cs584.project3.common as common
 
 def tuneSubmission01():
     kmdigits.submission01(False, 5)
@@ -18,4 +19,5 @@ def tuneWithMNIST2():
     kmdigits.tuneParametersMNIST2()    
 
 if __name__ == '__main__':
-    tuneWithMNIST2()
+    #common.testConversion()
+    kmdigits.chartClusterErrorVsClusterCount()
